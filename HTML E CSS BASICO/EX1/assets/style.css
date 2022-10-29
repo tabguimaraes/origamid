@@ -1,0 +1,27 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+h1 {
+	color: black;
+}
+
+h2 a {
+	color: seagreen;
+	text-transform: capitalize;
+}
+
+.hoje {
+	color: darkred;
+	font-weight: bold;
+}
+
+.amanha {
+	color: darkblue;
+	font-weight: bold;
+}
+
+p {
+	font-size: 20px;
+}
