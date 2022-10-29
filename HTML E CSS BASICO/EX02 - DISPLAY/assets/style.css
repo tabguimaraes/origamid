@@ -1,0 +1,46 @@
+* {
+	/* margin: 0; */
+	font-family: arial;
+	text-decoration: none;
+}
+
+.principal {
+	width: 80%;
+	margin: 3% auto;
+}
+
+.produtos {
+	border-radius: 4px;
+	margin: 30px;
+	padding: 30px;
+	background-color: #111;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	color: #111;
+}
+
+button {
+	background-color: #febe01;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+a {
+	color: #332200;
+	font-weight: 600;
+}
+
+span {
+	color: #febe01;
+}
+
+p {
+	color: #b2b2b2;
+}
+
+h2 {
+	margin: 0;
+}
