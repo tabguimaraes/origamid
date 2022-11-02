@@ -34,10 +34,9 @@ footer {
   width: 120px;
 }
 
-.menu {
+.menu a {
   margin-top: 20px;
   font-size: 20px;
-  display: flex;
 }
 
 /* GRID PINCIPAL */
@@ -109,17 +108,26 @@ footer {
 
 /* COLUNA DIREIA INFERIOR */
 
+.col-direita-inferior {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  row-gap: 40px;
+}
+
 .titulo-descricao {
   font-size: 40px;
   margin: 0;
-  margin-left: 50px;
   text-transform: capitalize;
+  grid-column: 2;
 }
 
 .paragrafo-descricao {
-  /* text-transform: capitalize; */
   font-size: 20px;
   margin: 0;
-  margin-left: 50px;
-  margin-bottom: 20px;
+  grid-column: 2;
+}
+
+.icones {
+  grid-column: 1;
+  margin-top: 10px;
 }
