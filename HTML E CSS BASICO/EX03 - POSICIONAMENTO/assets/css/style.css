@@ -1,0 +1,38 @@
+* {
+  text-decoration: none;
+  /* margin: 0; */
+  font-family: Arial;
+}
+
+main {
+  max-width: 1000px;
+  background: rgb(233, 233, 233);
+  margin: auto;
+}
+
+span {
+  text-transform: lowercase;
+}
+
+.titulo {
+  /* display: inline; */
+  margin: auto;
+  /* max-width: 1000px; */
+}
+
+.subtitulo {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  margin-bottom: 15px;
+}
+
+.ver-mais {
+  text-transform: capitalize;
+  background: #ee2211;
+  padding: 20px;
+  color: white;
+  border-radius: 4px;
+}
