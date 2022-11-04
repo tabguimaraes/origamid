@@ -110,8 +110,9 @@ footer {
 
 .col-direita-inferior {
   display: grid;
-  grid-template-columns: 40px 1fr;
-  row-gap: 40px;
+  grid-template-columns: 40px auto;
+  grid-template-rows: repeat (6, 40px);
+  row-gap: 10px;
 }
 
 .titulo-descricao {
@@ -121,13 +122,14 @@ footer {
   grid-column: 2;
 }
 
+.icones {
+  grid-column: 1;
+  align-self: center;
+
+}
+
 .paragrafo-descricao {
   font-size: 20px;
   margin: 0;
   grid-column: 2;
-}
-
-.icones {
-  grid-column: 1;
-  margin-top: 10px;
 }
