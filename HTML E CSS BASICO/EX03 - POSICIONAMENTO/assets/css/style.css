@@ -51,18 +51,23 @@ footer {
 /* COLUNA ESQUERDA */
 
 .col-esquerda {
-  display: grid;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: none; */
+  place-items: center;
 }
 
 .subtitulo {
   text-transform: capitalize;
   margin: 0;
-  text-align: right;
+  /* text-align: right; */
+  /* align-self: center; */
 }
 
 .descricao {
   margin: 0;
-  text-align: right;
+  /* text-align: right; */
+  grid-row: 1;
 }
 
 .botao {
@@ -80,6 +85,7 @@ footer {
   border-radius: 4px;
   width: 100px;
   inline-size: 90px;
+  align-self: center;
 }
 
 /* COLUNA DIREITA */
@@ -90,12 +96,13 @@ footer {
 
 .bike {
   max-width: 100%;
+  grid-column: 2 / 3;
 }
 
 /* COLUNA ESQUERDA INFERIOR */
 
 .col-esquerda-inferior {
-  border: 1px solid black;
+  border: none;
 }
 
 .sub-vantagens {
@@ -103,7 +110,7 @@ footer {
   text-align: right;
   text-transform: uppercase;
   font-size: 64px;
-  margin: 0;
+  margin: auto;
 }
 
 /* COLUNA DIREIA INFERIOR */
@@ -125,11 +132,15 @@ footer {
 .icones {
   grid-column: 1;
   align-self: center;
-
 }
 
 .paragrafo-descricao {
   font-size: 20px;
   margin: 0;
   grid-column: 2;
+}
+
+.vantagem-wrapper {
+  /* border: 1px solid black; */
+  margin-top: 18%;
 }
