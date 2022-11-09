@@ -78,14 +78,15 @@ footer {
 }
 
 .ver-mais {
+  /* display: grid; */
   text-transform: capitalize;
   background: #ee2211;
-  padding: 20px;
+  /* padding: 20px; */
   color: white;
   border-radius: 4px;
-  width: 100px;
-  inline-size: 90px;
-  align-self: center;
+  /* width: 100px; */
+  /* inline-size: 90px; */
+  place-self: center;
 }
 
 /* COLUNA DIREITA */
