@@ -7,7 +7,7 @@
 html,
 body {
   height: 100vh;
-  margin: 40px;
+  /* margin: 40px; */
   background: #f7f7f7;
 }
 
@@ -32,21 +32,28 @@ footer {
 .titulo {
   margin: auto;
   width: 120px;
+  margin-bottom: 20px;
 }
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
-  /* position: center; */
-  /* text-align: center; */
   justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  /* margin-bottom: 20px; */
+  border: 1px dashed gray;
+  height: 80px;
 }
 
 .menu a {
-  text-align: center;
-  margin-top: 20px;
-  margin: auto;
-  font-size: 20px;
+  background: red;
+  color: white;
+  padding: 1vw 2vw;
+  font-weight: 600;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+  /* margin-bottom: 40px; */
 }
 
 /* GRID PINCIPAL */
