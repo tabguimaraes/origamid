@@ -1,26 +1,20 @@
 * {
   text-decoration: none;
-  /* margin: 0; */
   font-family: Arial;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  height: 100vh;
-  /* margin: 40px; */
   background: #f7f7f7;
-}
-
-main {
   max-width: 1000px;
   margin: auto;
 }
 
-span {
-  text-transform: lowercase;
-}
-
-h1 {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -31,9 +25,8 @@ footer {
 
 /* TITULO OK */
 .titulo {
-  margin: auto;
+  margin: 40px auto;
   width: 120px;
-  margin-bottom: 20px;
 }
 
 /* MENU OK */
@@ -43,8 +36,6 @@ footer {
   align-content: center;
   flex-wrap: wrap;
   gap: 50px;
-  border: 1px dashed gray;
-  height: 80px;
 }
 
 .menu a {
@@ -53,90 +44,74 @@ footer {
   padding: 10px 30px;
   font-weight: 600;
   border-radius: 0.5vw;
-  
+  margin-bottom: 20px;
 }
 
 /* GRID PINCIPAL - AJUSTAR */
-
 .grid-principal {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border: 1px dashed gray;
 }
 
 /* COLUNA INTRODUÇÃO */
-
 .introducao {
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr; */
-  /* grid-template-rows: none; */
-  place-items: center;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: center;
+  text-align: right;
+  justify-items: end;
+  position: relative;
 }
 
 .subtitulo2 {
   text-transform: capitalize;
   margin: 0;
-  /* text-align: right; */
-  /* align-self: center; */
-}
-
-.descricao {
-  margin: 0;
-  /* text-align: right; */
-  grid-row: 1;
-}
-
-.botao {
-  display: grid;
-  width: 130px;
-  height: 50px;
-  text-align: center;
 }
 
 .ver-mais {
-  /* display: grid; */
   text-transform: capitalize;
   background: #ee2211;
-  /* padding: 20px; */
+  padding: 20px;
   color: white;
   border-radius: 4px;
-  /* width: 100px; */
-  /* inline-size: 90px; */
-  place-self: center;
+  justify-content: end;
 }
 
-/* COLUNA DIREITA */
-
-.imagem {
-  width: 100%;
+.detalhe {
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  background: red;
+  top: 30px;
+  right: -50px;
 }
 
 .bike {
   max-width: 100%;
-  grid-column: 2 / 3;
+  border: 1px dashed gray;
 }
 
 /* COLUNA ESQUERDA INFERIOR */
-
-.col-esquerda-inferior {
-  border: none;
-}
-
 .subtitulo3 {
-  word-wrap: break-word;
   text-align: right;
   text-transform: uppercase;
   font-size: 64px;
-  margin: auto;
+  color: rgba(0, 0, 0, 0.2);
+  /*PARA ALINHAR ESSE TEXTO PODE-SE USAR O MARGIN AUTO OU ALIGN-SELF*/
+  /* margin: auto; */
+  align-self: center;
 }
 
 /* COLUNA VANTAGENS - OK */
-
 .vantagens {
   display: grid;
-  grid-template-columns: 40px auto;
-  row-gap: 10px;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
 }
 
 .icones {
