@@ -7,7 +7,7 @@
 html,
 body {
   height: 100vh;
-  margin: 0;
+  margin: 40px;
   background: #f7f7f7;
 }
 
@@ -34,8 +34,18 @@ footer {
   width: 120px;
 }
 
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  /* position: center; */
+  /* text-align: center; */
+  justify-content: center;
+}
+
 .menu a {
+  text-align: center;
   margin-top: 20px;
+  margin: auto;
   font-size: 20px;
 }
 
@@ -44,20 +54,20 @@ footer {
 .grid-principal {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   gap: 40px;
 }
 
-/* COLUNA ESQUERDA */
+/* COLUNA INTRODUÇÃO */
 
-.col-esquerda {
+.introducao {
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr; */
   /* grid-template-rows: none; */
   place-items: center;
 }
 
-.subtitulo {
+.subtitulo2 {
   text-transform: capitalize;
   margin: 0;
   /* text-align: right; */
@@ -106,7 +116,7 @@ footer {
   border: none;
 }
 
-.sub-vantagens {
+.subtitulo3 {
   word-wrap: break-word;
   text-align: right;
   text-transform: uppercase;
@@ -114,13 +124,18 @@ footer {
   margin: auto;
 }
 
-/* COLUNA DIREIA INFERIOR */
+/* COLUNA VANTAGENS */
 
-.col-direita-inferior {
+.vantagens {
   display: grid;
   grid-template-columns: 40px auto;
-  grid-template-rows: repeat (6, 40px);
+  /* grid-template-rows: repeat (6, 40px); */
   row-gap: 10px;
+}
+
+.icones {
+  grid-column: 1;
+  align-self: center;
 }
 
 .titulo-descricao {
@@ -130,18 +145,8 @@ footer {
   grid-column: 2;
 }
 
-.icones {
-  grid-column: 1;
-  align-self: center;
-}
-
 .paragrafo-descricao {
   font-size: 20px;
   margin: 0;
   grid-column: 2;
-}
-
-.vantagem-wrapper {
-  /* border: 1px solid black; */
-  margin-top: 18%;
 }
