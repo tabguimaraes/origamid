@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: #f7f7f7;
+  background: #cfc7c7;
   max-width: 1000px;
   margin: auto;
 }
@@ -39,8 +39,8 @@ footer {
 }
 
 .menu a {
-  background: red;
-  color: white;
+  background: white;
+  color: black;
   padding: 10px 30px;
   font-weight: 600;
   border-radius: 0.5vw;
@@ -133,4 +133,10 @@ footer {
   font-size: 20px;
   margin: 0;
   grid-column: 2;
+}
+
+/* ESTILOS PROPOSTOS NO EXERCICIO 4 */
+
+.menu a:hover {
+  border: 2px solid rgb(128, 0, 0);
 }
