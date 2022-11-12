@@ -1,0 +1,136 @@
+* {
+  text-decoration: none;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #f7f7f7;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* TITULO OK */
+.titulo {
+  margin: 40px auto;
+  width: 120px;
+}
+
+/* MENU OK */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.menu a {
+  background: red;
+  color: white;
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 0.5vw;
+  margin-bottom: 20px;
+}
+
+/* GRID PRINCIPAL - AJUSTAR */
+.grid-principal {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border: 1px dashed gray;
+}
+
+/* COLUNA INTRODUÇÃO */
+.introducao {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: center;
+  text-align: right;
+  justify-items: end;
+  position: relative;
+}
+
+.subtitulo2 {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.ver-mais {
+  text-transform: capitalize;
+  background: #ee2211;
+  padding: 20px;
+  color: white;
+  border-radius: 4px;
+  justify-content: end;
+}
+
+.detalhe {
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  background: red;
+  top: 30px;
+  right: -50px;
+}
+
+.bike {
+  width: 100%;
+  border: 1px dashed gray;
+  /* background-image: url("../images/bicicleta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+/* COLUNA ESQUERDA INFERIOR */
+.subtitulo3 {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 64px;
+  color: rgba(0, 0, 0, 0.2);
+  /*PARA ALINHAR ESSE TEXTO PODE-SE USAR O MARGIN AUTO OU ALIGN-SELF*/
+  /* margin: auto; */
+  align-self: center;
+}
+
+/* COLUNA VANTAGENS - OK */
+.vantagens {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+}
+
+.icones {
+  grid-column: 1;
+  align-self: center;
+}
+
+.titulo-descricao {
+  font-size: 40px;
+  margin: 0;
+  text-transform: capitalize;
+  grid-column: 2;
+}
+
+.paragrafo-descricao {
+  font-size: 20px;
+  margin: 0;
+  grid-column: 2;
+}
