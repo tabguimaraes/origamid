@@ -20,12 +20,13 @@ footer {
 
 /* TITULO OK */
 .banner {
-  margin: 2rem auto;
-  /*ENTENDER A INTERAÇÃO COM O POSICIONAMENTO*/
-  max-width: 120px;
-  height: auto;
-  /* background-image: url("../images/bikcraft.svg");
-  background-repeat: no-repeat; */
+  margin: 2rem;
+  width: 1000px;
+  height: 50px;
+  background-image: url("../images/bikcraft.svg");
+  background-repeat: no-repeat;
+  background-size: 10rem;
+    background-position: center;
 }
 
 /* MENU OK */
