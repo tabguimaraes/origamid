@@ -8,9 +8,9 @@
     <title>Bikcraft</title>
   </head>
   <body>
-    <header>
-      <div class="banner"></div>
-      <nav class="menu">
+    <header class="header">
+      <img class="banner" src="./assets/images/bikcraft.svg" alt="" />
+      <nav class="menu" aria-label="primaria">
         <ul>
           <li><a href="">Sobre</a></li>
           <li><a href="">Lojas</a></li>
@@ -20,41 +20,40 @@
       </nav>
     </header>
     <main class="grid-principal">
-      <article class="introducao">
-        <span></span>
-        <h1>Bicicletas feitas a mão</h1>
+      <article class="introducao" aria-labelledby="label-introducao">
+        <h1 id="label-introducao">Bicicletas feitas a mão</h1>
         <p>
           A Nimbus Stark é a melhor Bikcraft já feita pela nossa equipe. Ela vem
           equipada com os melhores acessórios da marca
         </p>
         <a href="">Ver mais</a>
       </article>
-
       <img
         class="bike"
         src="./assets/images/bicicleta.jpg"
         alt="bicicleta preta"
       />
+      <div class="subtitulo">
+        <h2>vantagens bikcraft</h2>
+      </div>
 
-      <h2>vantagens bikcraft</h2>
-
-      <article class="vantagens-wrapper">
-        <section class="vantagens-itens">
+      <ul class="vantagens-wrapper">
+        <li class="vantagens-itens">
           <img src="./assets/images/eletrica.svg" alt="" />
           <h3>motor elétrico</h3>
           <p>Permite você viajar distâncias inimagináveis com sua bike.</p>
-        </section>
-        <section class="vantagens-itens">
+        </li>
+        <li class="vantagens-itens">
           <img src="./assets/images/velocidade.svg" alt="" />
           <h3>40 km/h</h3>
           <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-        </section>
-        <section class="vantagens-itens">
+        </li>
+        <li class="vantagens-itens">
           <img src="./assets/images/rastreador.svg" alt="" />
           <h3>rastreador</h3>
           <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
-        </section>
-      </article>
+        </li>
+      </ul>
     </main>
     <footer>Bikcraft. Alguns direitos reservados</footer>
   </body>

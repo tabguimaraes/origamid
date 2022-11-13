@@ -18,40 +18,41 @@ footer {
   margin-top: 2.5rem;
 }
 
-/* TITULO OK */
-.banner {
-  margin: 2rem;
-  width: 1000px;
-  height: 50px;
-  background-image: url("../images/bikcraft.svg");
-  background-repeat: no-repeat;
-  background-size: 10rem;
-    background-position: center;
+/* HEADER OK */
+
+.header {
+  display: grid;
+  place-items: center;
 }
 
-/* MENU OK */
-ul {
+.banner {
+  margin: 2rem;
+}
+
+.menu ul {
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
   place-content: center;
 }
-.menu {
-  margin-bottom: 2.5rem;
-}
 
 .menu a {
+  display: block;
   background: white;
   color: black;
   padding: 10px 30px;
   font-weight: 600;
   border-radius: 0.5vw;
-  margin-bottom: 20px;
   text-transform: uppercase;
   border: 2px solid transparent;
 }
 
 .menu a:hover {
+  border: 2px solid #ee2211;
+}
+
+.menu a:focus {
+  outline-style: none;
   border: 2px solid #ee2211;
 }
 
@@ -74,7 +75,8 @@ ul {
   position: relative;
   background-color: white;
 }
-.introducao span {
+.introducao::before {
+  content: "";
   width: 60px;
   height: 4px;
   position: absolute;
@@ -83,13 +85,14 @@ ul {
   right: -30px;
 }
 
-.introducao h2 {
+.introducao h1 {
   text-transform: capitalize;
+  font-size: 2rem;
   margin: 0;
 }
 
 .introducao p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .introducao a {
@@ -101,19 +104,35 @@ ul {
   justify-content: end;
 }
 
+.introducao a:hover {
+  background: #900;
+}
+
 .grid-principal img {
   max-width: 100%;
 }
 
-.grid-principal h2 {
+.subtitulo {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  background-image: url("../images/onda.svg");
+}
+
+.subtitulo h2 {
   text-align: right;
   padding: 40px;
   text-transform: uppercase;
-  font-size: 64px;
+  font-size: 4rem;
   color: #c6c6c6;
   /*PARA ALINHAR ESSE TEXTO PODE-SE USAR O MARGIN AUTO OU ALIGN-SELF*/
-  /* margin: auto; */
-  align-self: center;
+  /* margin: auto auto; */
+  /* align-self: center; */
+}
+
+.vantagens-wrapper {
+  padding: 20px;
+  background-color: white;
 }
 
 .vantagens-itens {
@@ -122,7 +141,6 @@ ul {
   grid-column: 2/-1;
   gap: 10px 20px;
   padding: 20px 10px;
-  background-color: white;
   border-left: 2px solid transparent;
 }
 
@@ -137,18 +155,23 @@ ul {
 }
 
 .vantagens-itens h3 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin: 0;
   text-transform: capitalize;
   grid-column: 2;
 }
 
 .vantagens-itens p {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0;
   grid-column: 2;
 }
 
 .vantagens-itens:hover {
   border-left: 2px solid red;
+}
+
+.menu a,
+.vantagens-itens {
+  transition: 0.3s;
 }
