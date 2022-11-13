@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: #cfc7c7;
+  background: #e0e0e0;
   max-width: 1000px;
   margin: auto;
 }
@@ -26,14 +26,14 @@ footer {
 /* TITULO OK */
 .titulo {
   margin: 40px auto;
-  width: 120px;
+  /*ENTENDER A INTERAÇÃO COM O POSICIONAMENTO*/
+  max-width: 120px;
 }
 
 /* MENU OK */
 .menu {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  place-content: center;
   flex-wrap: wrap;
   gap: 50px;
 }
@@ -45,15 +45,20 @@ footer {
   font-weight: 600;
   border-radius: 0.5vw;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
 }
 
-/* GRID PRINCIPAL - AJUSTAR */
+/* CÓDIGO COMENTADO PARA USO NO EX04 */
+/* .menu a:hover {
+  border: 2px solid #ee2211;
+} */
+
+/* GRID PRINCIPAL */
 .grid-principal {
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  border: 1px dashed gray;
 }
 
 /* COLUNA INTRODUÇÃO */
@@ -66,15 +71,28 @@ footer {
   text-align: right;
   justify-items: end;
   position: relative;
+  background-color: white;
+}
+.introducao span {
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  background: red;
+  top: 30px;
+  right: -30px;
 }
 
-.subtitulo2 {
+.introducao h2 {
   text-transform: capitalize;
   margin: 0;
 }
 
-.ver-mais {
-  text-transform: capitalize;
+.introducao p {
+  font-size: 20px;
+}
+
+.introducao a {
+  text-transform: uppercase;
   background: #ee2211;
   padding: 20px;
   color: white;
@@ -82,61 +100,51 @@ footer {
   justify-content: end;
 }
 
-.detalhe {
-  width: 60px;
-  height: 4px;
-  position: absolute;
-  background: red;
-  top: 30px;
-  right: -50px;
+.grid-principal img {
+  max-width: 100%;
 }
 
-.bike {
-  width: 100%;
-  border: 1px dashed gray;
-  /* background-image: url("../images/bicicleta.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
-}
-
-/* COLUNA ESQUERDA INFERIOR */
-.subtitulo3 {
+.grid-principal h2 {
   text-align: right;
+  padding: 40px;
   text-transform: uppercase;
   font-size: 64px;
-  color: rgba(0, 0, 0, 0.2);
+  color: #c6c6c6;
   /*PARA ALINHAR ESSE TEXTO PODE-SE USAR O MARGIN AUTO OU ALIGN-SELF*/
   /* margin: auto; */
   align-self: center;
 }
 
-/* COLUNA VANTAGENS - OK */
-.vantagens {
+.vantagens-itens {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 40px auto;
+  grid-column: 2/-1;
   gap: 10px 20px;
+  padding: 20px 10px;
+  background-color: white;
+  border-left: 2px solid transparent;
 }
 
-.icones {
+.vantagens-itens img {
   grid-column: 1;
-  align-self: center;
+  place-self: center;
+  height: 40px;
 }
 
-.titulo-descricao {
+.vantagens-itens h3 {
   font-size: 40px;
   margin: 0;
   text-transform: capitalize;
   grid-column: 2;
 }
 
-.paragrafo-descricao {
+.vantagens-itens p {
   font-size: 20px;
   margin: 0;
   grid-column: 2;
 }
 
-/* ESTILOS PROPOSTOS NO EXERCICIO 4 */
-
-.menu a:hover {
-  border: 2px solid rgb(128, 0, 0);
-}
+/* CÓDIGO COMENTADO PARA USO NO EX04 */
+/* .vantagens-itens:hover {
+  border-left: 2px solid red;
+} */
