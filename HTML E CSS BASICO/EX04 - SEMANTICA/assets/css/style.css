@@ -2,6 +2,8 @@
   text-decoration: none;
   font-family: Arial;
   box-sizing: border-box;
+  list-style: none;
+  margin: 0;
 }
 
 html,
@@ -11,31 +13,30 @@ body {
   margin: auto;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
 footer {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2.5rem;
 }
 
 /* TITULO OK */
-.titulo {
-  margin: 40px auto;
+.banner {
+  margin: 2rem auto;
   /*ENTENDER A INTERAÇÃO COM O POSICIONAMENTO*/
   max-width: 120px;
+  height: auto;
+  /* background-image: url("../images/bikcraft.svg");
+  background-repeat: no-repeat; */
 }
 
 /* MENU OK */
-.menu {
+ul {
   display: flex;
-  place-content: center;
-  flex-wrap: wrap;
   gap: 50px;
+  flex-wrap: wrap;
+  place-content: center;
+}
+.menu {
+  margin-bottom: 2.5rem;
 }
 
 .menu a {
@@ -49,10 +50,9 @@ footer {
   border: 2px solid transparent;
 }
 
-/* CÓDIGO COMENTADO PARA USO NO EX04 */
-/* .menu a:hover {
+.menu a:hover {
   border: 2px solid #ee2211;
-} */
+}
 
 /* GRID PRINCIPAL */
 .grid-principal {
@@ -125,6 +125,10 @@ footer {
   border-left: 2px solid transparent;
 }
 
+.vantagens-itens:nth-child(odd) {
+  background-color: #f5f3f3;
+}
+
 .vantagens-itens img {
   grid-column: 1;
   place-self: center;
@@ -144,7 +148,6 @@ footer {
   grid-column: 2;
 }
 
-/* CÓDIGO COMENTADO PARA USO NO EX04 */
-/* .vantagens-itens:hover {
+.vantagens-itens:hover {
   border-left: 2px solid red;
-} */
+}
