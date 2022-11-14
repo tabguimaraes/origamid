@@ -44,19 +44,28 @@ html {
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(2, 20rem);
+  grid-template-columns: repeat(2, auto);
   justify-content: center;
   gap: 2rem;
+  background-color: white;
+  border: 1px dashed black;
 }
 
 .info-grid img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .info-detalhes {
-  align-self: center;
+  justify-items: end;
+  align-content: center;
   text-align: right;
   display: grid;
+  gap: 1rem;
+  border: 1px dashed black;
+}
+
+.info-detalhes h1 {
+  font-size: 3rem;
 }
 
 .info-detalhes a {
@@ -66,4 +75,18 @@ html {
   background-color: red;
   border-radius: 0.4rem;
   text-transform: uppercase;
+  /* width: fit-content; */
+  /* justify-self: end; */
+}
+
+.vantagens-grid {
+  display: grid;
+}
+
+.vantagens-grid h2 {
+  grid-column: 1;
+}
+
+.vantagens-wrapper {
+  grid-column: 2;
 }
