@@ -19,6 +19,12 @@ footer {
   background-color: floralwhite;
 }
 
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .header {
   display: grid;
   margin-bottom: 2rem;
@@ -68,11 +74,18 @@ footer {
   /* padding: 1rem; */
 }
 
-.info-img img {
+/* MESMO RESULTADO DE COLOCAR A IMG DENTRO DA DIV .INFO-IMG */
+.info-grid img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* .info-img img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .info-detalhes {
   justify-items: end;
@@ -175,6 +188,42 @@ p {
 }
 
 @media (max-width: 1000px) {
+
+  .menu{
+    gap: 1rem;
+    /* width: 100%; */
+    justify-content: center;
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+
+  .menu a{
+    padding: 1rem 1.5rem;
+    font-size: .8rem;
+  }
+
+  .info-detalhes::before{
+    display: none;
+  }
+
+  .info-detalhes {
+    text-align: left;
+    padding: 10px;
+    justify-items: start
+  }
+
+  .info-detalhes h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .info-detalhes a {
+    justify-self: end;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
   .vantagens-grid {
     grid-template-columns: 1fr;
   }
