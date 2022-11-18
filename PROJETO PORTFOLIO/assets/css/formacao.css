@@ -5,11 +5,23 @@
 
 .formacao-container {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 120px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+  position: relative;
+}
+
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
 }
 
 .formacao-subtitulo {
@@ -84,10 +96,17 @@
   margin-bottom: 60px;
 }
 
+/* AJUSTADO MANUALMENTE. REVISAR CÓDIGO FINAL DO PROFESSOR E VER ONDE HOUVE A DIFERENÇA */
+.idiomas h3,
+.cursos h3 {
+  color: #8f8f8f;
+  margin-bottom: 30px;
+}
+
 .formacao-extra {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #8f8f8f;
+  color: white;
   text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
@@ -100,7 +119,7 @@
   height: 24px;
   position: absolute;
   left: -36px;
-  top: -4px;
+  /* top: -3px; */
 }
 
 .cursos h3::before {
@@ -109,4 +128,44 @@
 
 .idiomas h3::before {
   background: url("../img/idiomas.svg") no-repeat center center;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span {
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .formacao-subtitulo {
+    color: white;
+  }
+
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+
+  /* ICONES DE CURSO E IDIOMA ESTAVAM SENDO CORTADOS AO DIMINUIR A PÁGINA */
+  .formacao-extra {
+    padding-left: 50px;
+  }
+
+  .formacao-extra h3::before {
+    left: 10px;
+  }
 }
