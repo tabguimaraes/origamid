@@ -40,10 +40,11 @@
   color: #fff;
 }
 
-/* .formacao .subtitulo {
+.formacao .subtitulo {
+  color: #000;
   max-width: 5ch;
   word-break: break-all;
-} */
+}
 
 .faculdade-lista {
   display: flex;
@@ -159,13 +160,17 @@
   .formacao-texto {
     font-size: 1.25rem;
   }
-
-  /* ICONES DE CURSO E IDIOMA ESTAVAM SENDO CORTADOS AO DIMINUIR A PÁGINA */
+  /* /////////////////////////////////////////////////// */
+  /* ICONES DE CURSO E IDIOMA ESTAVAM VAZANDO DA TELA AO DIMINUIR A PÁGINA */
   .formacao-extra {
     padding-left: 50px;
   }
 
   .formacao-extra h3::before {
     left: 10px;
+  }
+  /* /////////////////////////////////// */
+  #formacao .subtitulo {
+    max-width: initial;
   }
 }
