@@ -70,7 +70,7 @@
 .empresa-habilidades {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 10px 20px;
   align-content: start;
 }
 
@@ -87,6 +87,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .experiencia .subtitulo {
     color: #141414;
   }
@@ -94,6 +95,7 @@
   .experiencia-texto {
     font-size: 1.25rem;
   }
+
   .empresa-ano {
     position: initial;
     order: 1;
@@ -102,6 +104,11 @@
   }
   .empresa-ano::before {
     content: "Ano: ";
+  }
+
+  .empresa-habilidades li {
+    text-align: center;
+    padding: 10px;
   }
 }
 
