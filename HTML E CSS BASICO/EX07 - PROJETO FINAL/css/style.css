@@ -39,3 +39,35 @@
 
 /* Termos */
 @import "./termos/termos.css";
+
+body,
+ul,
+li,
+a {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.header-menu a {
+  display: inline-block;
+  padding: 16px 0px;
+  font-size: 18px;
+}
