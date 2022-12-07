@@ -54,6 +54,8 @@ a {
 
 .header {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -63,11 +65,36 @@ a {
 
 .header-menu {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .header-menu a {
   display: inline-block;
   padding: 16px 0px;
   font-size: 18px;
+  color: white;
 }
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+
+  .header-menu a {
+    background: var(--cor-11);
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* REVISAR CLASSES DE CORES E TIPOGRAFIA INSERIDAS NO HTML E CSS */
