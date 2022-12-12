@@ -41,6 +41,8 @@
 @import "./termos/termos.css";
 
 body,
+h1,
+p,
 ul,
 li,
 a {
@@ -50,6 +52,12 @@ a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .header {
@@ -98,3 +106,8 @@ a {
 }
 
 /* REVISAR CLASSES DE CORES E TIPOGRAFIA INSERIDAS NO HTML E CSS */
+
+.introducao-bg {
+  background-color: #000;
+  color: white;
+}
