@@ -40,6 +40,10 @@
 /* Termos */
 @import "./termos/termos.css";
 
+* {
+  box-sizing: border-box;
+}
+
 body,
 h1,
 p,
@@ -116,6 +120,10 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
+  /* box-sizing: border-box; */
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .introducao-conteudo {
@@ -129,6 +137,30 @@ img {
   line-height: 1.125;
 }
 
+.introducao h1 span {
+  color: #ffbb00;
+}
+
 .introducao p {
   margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+
+.introducao a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbb00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
