@@ -44,6 +44,10 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 2000px;
+}
+
 body,
 h1,
 p,
@@ -114,6 +118,7 @@ img {
 .introducao-bg {
   background-color: #000;
   color: white;
+  box-shadow: inset 0 -120px white;
 }
 
 .introducao {
@@ -126,9 +131,14 @@ img {
   margin: 0 auto;
 }
 
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .introducao-conteudo {
   align-self: end;
-  padding-bottom: 80px;
+  padding-bottom: 200px;
 }
 
 .introducao h1 {
