@@ -86,10 +86,26 @@ img {
 }
 
 .header-menu a {
+  color: #ffffff;
   display: inline-block;
   padding: 16px 0px;
   font-size: 18px;
-  color: white;
+  position: relative;
+}
+
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #ffffff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
 }
 
 @media (max-width: 800px) {
