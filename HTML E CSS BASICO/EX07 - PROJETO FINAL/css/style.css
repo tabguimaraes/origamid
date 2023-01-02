@@ -117,6 +117,9 @@ img {
   .header-menu a:hover {
     background-color: #2e2e2e;
   }
+  .header-menu a:hover:after {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -127,9 +130,10 @@ img {
     padding: 8px 12px;
     font-size: 14px;
   }
+  .header-menu a:hover:after {
+    display: none;
+  }
 }
-
-/* REVISAR CLASSES DE CORES E TIPOGRAFIA INSERIDAS NO HTML E CSS */
 
 .introducao-bg {
   background-color: #000;
