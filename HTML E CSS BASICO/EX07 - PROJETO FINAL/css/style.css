@@ -51,7 +51,8 @@
 }
 
 body {
-  height: 2000px;
+  /* CRIAR ESPAÇO EMBAIXO PARA PODER FAZER O SCROLL E VER COMO ESTÁ FICANDO O POSICIONAMENTO */
+  padding-bottom: 600px;
 }
 
 img {
@@ -144,7 +145,7 @@ img {
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 40px;
+  gap: 0px 40px;
   /* box-sizing: border-box; */
   max-width: 1200px;
   padding: 0 20px;
@@ -154,6 +155,7 @@ img {
 .introducao img {
   height: 100%;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 .introducao-conteudo {
