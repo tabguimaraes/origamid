@@ -42,30 +42,25 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: inherit;
 }
 
 body {
   height: 2000px;
 }
 
-body,
-h1,
-p,
-ul,
-li,
-a {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  color: inherit;
-}
-
 img {
   max-width: 100%;
   display: block;
+}
+
+.header-bg {
+  background-color: #000;
 }
 
 .header {
@@ -114,8 +109,13 @@ img {
   }
 
   .header-menu a {
-    background: var(--cor-11);
+    background: #111;
+    padding: 12px 16px;
     border-radius: 4px;
+  }
+
+  .header-menu a:hover {
+    background-color: #2e2e2e;
   }
 }
 
