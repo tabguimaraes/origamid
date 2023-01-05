@@ -1,19 +1,20 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: inherit;
-  }
-  
-  body {
-    /* CRIAR ESPAÇO EMBAIXO PARA PODER FAZER O SCROLL E VER COMO ESTÁ FICANDO O POSICIONAMENTO */
-    padding-bottom: 600px;
-  }
-  
-  img {
-    max-width: 100%;
-    display: block;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: inherit;
+}
+
+body {
+  /* CRIAR ESPAÇO EMBAIXO PARA PODER FAZER O SCROLL E VER COMO ESTÁ FICANDO O POSICIONAMENTO */
+  padding-bottom: 600px;
+  color: var(--cor-11);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
