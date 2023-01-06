@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 .font-1-xs {
-  font: 500 0.75rem/1.35 "Poppins", sans-serif;
+  font: 400 0.75rem/1.35 "Poppins", sans-serif;
 }
 
 .font-2-xs {
@@ -11,7 +11,7 @@
 }
 
 .font-1-s {
-  font: 500 1rem/1.5 "Poppins", sans-serif;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
 }
 
 .font-2-s {
@@ -20,7 +20,7 @@
 
 .font-1-m,
 .font-1-m-b {
-  font: 500 1.125rem/1.35 "Poppins", sans-serif;
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
 }
 
 .font-1-m-b {
@@ -32,7 +32,7 @@
 }
 
 .font-1-l {
-  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
 }
 
 .font-2-l,
@@ -54,6 +54,7 @@
   font: 500 2rem/1.25 "Roboto", sans-serif;
 }
 
+/* SELETOR FONT: PESO + TAMANHO/LINE HEIGHT + FAMILIA*/
 .font-1-xxl {
   font: 600 4rem/1.125 "Poppins", sans-serif;
 }
@@ -62,9 +63,7 @@
   .font-1-xxl {
     font-size: 3rem;
   }
-  .font-2-l {
-    font-size: 1.125rem;
-  }
+  .font-2-l,
   .font-2-l-b {
     font-size: 1.125rem;
   }
