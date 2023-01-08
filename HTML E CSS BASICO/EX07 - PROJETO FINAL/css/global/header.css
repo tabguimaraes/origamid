@@ -8,9 +8,6 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .header-menu {
@@ -23,7 +20,6 @@
   display: inline-block;
   padding: 16px 0px;
   position: relative;
-  
 }
 
 .header-menu a:after {

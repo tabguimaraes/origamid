@@ -3,9 +3,7 @@
 }
 
 .bicicletas-lista h2 {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto 40px auto;
+  margin-bottom: 40px;
 }
 
 .bicicletas-lista ul {
@@ -45,9 +43,9 @@
   margin-right: 8px;
 }
 
-.bicicletas-lista  a:hover h3::before{
+.bicicletas-lista a:hover h3::before {
   width: 24px;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 .bicicletas-lista li span {
