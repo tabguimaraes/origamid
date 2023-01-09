@@ -3,6 +3,8 @@
   grid-template-columns: 1fr 1fr;
   background: var(--cor-p1);
   overflow: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .depoimento img {

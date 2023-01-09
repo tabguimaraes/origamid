@@ -1,6 +1,7 @@
 .parceiros {
   padding: 60px 0 120px 0;
   border: 2px solid transparent;
+  margin-bottom: 20px;
 }
 
 .parceiros:hover {
@@ -22,6 +23,10 @@
 .parceiros li {
   display: flex;
   padding: 32px;
+  border-left: 2px solid transparent;
+}
+
+.parceiros:hover li {
   border-left: 2px solid var(--cor-2);
 }
 
@@ -35,6 +40,9 @@
 }
 
 .parceiros li:nth-child(n + 5) {
+  border-top: 2px solid transparent;
+}
+.parceiros:hover li:nth-child(n + 5) {
   border-top: 2px solid var(--cor-2);
 }
 
