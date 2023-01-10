@@ -10,7 +10,7 @@
 
 body {
   /* CRIAR ESPAÇO EMBAIXO PARA PODER FAZER O SCROLL E VER COMO ESTÁ FICANDO O POSICIONAMENTO */
-  padding-bottom: 600px;
+  /* padding-bottom: 600px; */
   color: var(--cor-11);
 }
 
