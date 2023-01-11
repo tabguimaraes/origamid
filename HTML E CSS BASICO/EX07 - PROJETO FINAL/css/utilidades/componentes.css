@@ -1,6 +1,6 @@
 .container {
   max-width: 1200px;
-  padding: 20px;
+  padding: 60px 20px;
   margin: 0 auto;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .titulo-bg {
-  padding: 60px 0;
+  /* padding: 60px 0; */
   background: var(--cor-11);
 }
 
@@ -65,8 +65,8 @@
 }
 
 @media (max-width: 800px) {
-  .titulo {
-    padding: 40px 0;
+  .container {
+    padding: 40px 20px;
   }
 
   .titulo p {
