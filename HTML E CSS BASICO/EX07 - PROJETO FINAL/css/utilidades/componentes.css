@@ -29,6 +29,20 @@
   background: var(--cor-9);
 }
 
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: 0.3s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
 @media (max-width: 600px) {
   .botao {
     padding: 12px 16px;
@@ -56,7 +70,6 @@
 }
 
 .titulo-bg {
-  /* padding: 60px 0; */
   background: var(--cor-11);
 }
 

@@ -1,0 +1,78 @@
+.bicicletas-bg {
+  background: var(--cor-11);
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.bicicletas-imagem {
+  position: relative;
+}
+
+.bicicletas-imagem span {
+  display: inline-block;
+  background: var(--cor-12);
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.bicicletas-conteudo ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 150px;
+  margin-top: 20px;
+}
+
+.bicicletas-conteudo li {
+  justify-self: left;
+}
+
+/* PENDENTE AJUSTE */
+.bicicletas-conteudo a {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  /* ALTERAÇÕES PESSOAIS */
+  .bicicletas-imagem span {
+    border-radius: 0 0 0 4px;
+    top: 0;
+  }
+
+  .bicicletas-conteudo {
+    position: relative;
+  }
+
+  .bicicletas-conteudo ul {
+    gap: 20px;
+    max-width: fit-content;
+    margin: 32px auto;
+  }
+
+  .bicicletas-conteudo li {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+  }
+
+  .bicicletas-conteudo a {
+    position: absolute;
+    margin: 0;
+    right: -1.25rem;
+    top: 14rem;
+    border-radius: 4px 0 0 0;
+  }
+
+  .bicicletas {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+}
