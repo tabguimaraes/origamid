@@ -25,6 +25,15 @@
   min-width: 100%;
 }
 
+.bicicleta-imagens img:nth-child(1n + 2) {
+  border: 1px solid transparent;
+}
+
+.bicicleta-imagens img:hover:nth-child(1n + 2) {
+  border: 1px solid var(--cor-p1);
+  cursor: pointer;
+}
+
 .bicicleta-conteudo > p {
   margin-bottom: 32px;
 }
