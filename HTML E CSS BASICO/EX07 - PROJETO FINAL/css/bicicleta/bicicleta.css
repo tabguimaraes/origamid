@@ -23,6 +23,8 @@
 
 .bicicleta-imagens a:first-child {
   min-width: 100%;
+  /* background: white; */
+  /* opacity: 1; */
 }
 
 /* .bicicleta-imagens img:nth-child(1n + 2) {
@@ -41,14 +43,19 @@
 .bicicleta-imagens a:nth-child(1n + 2) {
   border: 2px solid transparent;
   border-radius: 4px;
-  opacity: 0.7;
+  filter: blur(1px);
+  /* opacity: 0.7; */
+  transition: 0.5s;
+  /* background: black; */
 }
 
 .bicicleta-imagens a:hover:nth-child(1n + 2) {
   border: 2px solid var(--cor-p1);
   border-radius: 4px;
   cursor: pointer;
-  opacity: 1;
+  /* opacity: 1; */
+  background: white;
+  filter: blur(0px);
 }
 
 .bicicleta-conteudo > p {
