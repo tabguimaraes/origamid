@@ -1,10 +1,11 @@
 #contato {
-  background: var(--cor-1);
+  background: linear-gradient(var(--cor-11) 700px, var(--cor-1) 0px);
 }
 
 .contato {
   display: grid;
   grid-template-columns: 5fr 7fr;
+  padding-top: 0;
 }
 
 .contato-dados,
@@ -70,6 +71,9 @@
 }
 
 @media (max-width: 800px) {
+  #contato {
+    background: linear-gradient(var(--cor-11) 500px, var(--cor-1) 0px);
+  }
   .contato {
     grid-template-columns: 1fr;
   }
@@ -80,7 +84,14 @@
   .contato-dados {
     border-radius: 5px 5px 0 0;
   }
-  .contato-dados h2 {
+  .contato-formulario {
+    border-radius: 0 0 5px 5px;
+  }
+  .contato-dados h2,
+  .contatos-meio {
     margin-bottom: 32px;
+  }
+  .contato-redes {
+    margin-bottom: 12px;
   }
 } ;
