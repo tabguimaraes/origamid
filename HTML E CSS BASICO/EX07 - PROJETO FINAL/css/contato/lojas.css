@@ -1,8 +1,34 @@
 .lojas {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  padding: 0 20px 120px 20px;
 }
 
 .lojas h2 {
   grid-column: span 2;
+  margin-bottom: 60px;
+}
+
+.lojas iframe {
+  border-radius: 4px 4px 0 0;
+}
+
+.lojas-item {
+  border-radius: 4px;
+  background: var(--cor-0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.lojas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lojas-dados a {
+  display: block;
+}
+
+.lojas-dados a:nth-child(2) {
+  grid-row: 2;
 }
