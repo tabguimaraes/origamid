@@ -10,8 +10,10 @@
   margin-bottom: 60px;
 }
 
-.lojas iframe {
+.lojas-item iframe {
   border-radius: 4px 4px 0 0;
+  width: 100%;
+  /* max-height: 500px; */
 }
 
 .lojas-item {
@@ -39,6 +41,11 @@
   padding-left: 12px;
 }
 
+.lojas-dados a:hover {
+  color: var(--cor-12);
+  font-weight: 600;
+}
+
 .lojas-horario {
   display: flex;
   gap: 8px;
@@ -54,12 +61,5 @@
   .lojas h2 {
     grid-column: auto;
     margin-bottom: 20px;
-  }
-
-  iframe {
-    display: block;
-    /* margin: 0 auto; */
-    width: fit-content;
-    /* max-height: auto; */
   }
 } ;
