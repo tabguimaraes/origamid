@@ -23,7 +23,7 @@
 .lojas-conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
+  padding: 32px;
   gap: 32px 16px;
 }
 
@@ -35,9 +35,31 @@
 .lojas-dados {
   display: grid;
   gap: 8px;
+  border-left: 2px solid var(--cor-2);
+  padding-left: 12px;
 }
 
 .lojas-horario {
   display: flex;
-  gap: 20px;
+  gap: 8px;
+  align-items: center;
 }
+
+@media (max-width: 800px) {
+  .lojas,
+  .lojas-conteudo {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .lojas h2 {
+    grid-column: auto;
+    margin-bottom: 20px;
+  }
+
+  iframe {
+    display: block;
+    /* margin: 0 auto; */
+    width: fit-content;
+    /* max-height: auto; */
+  }
+} ;
