@@ -24,8 +24,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 20px;
+  gap: 32px 16px;
 }
 
-.lojas-dados a:nth-child(2) {
-  grid-row: 2;
+.lojas-conteudo h3,
+.lojas-horario {
+  grid-column: span 2;
+}
+
+.lojas-dados {
+  display: grid;
+  gap: 8px;
+}
+
+.lojas-horario {
+  display: flex;
+  gap: 20px;
 }
