@@ -17,45 +17,35 @@
 }
 
 .bicicleta-imagens a {
+  display: inline-block;
   flex: 1;
   min-width: 200px;
 }
 
 .bicicleta-imagens a:first-child {
   min-width: 100%;
-  /* background: white; */
-  /* opacity: 1; */
-}
-
-/* .bicicleta-imagens img:nth-child(1n + 2) {
   border: 2px solid transparent;
+  transition: 0.5s;
 }
 
-.bicicleta-imagens img:hover:nth-child(1n + 2) {
+.bicicleta-imagens a:hover:first-child {
   border: 2px solid var(--cor-p1);
-  cursor: pointer;
-} */
-
-.bicicleta-imagens a {
-  display: inline-block;
 }
 
 .bicicleta-imagens a:nth-child(1n + 2) {
   border: 2px solid transparent;
   border-radius: 4px;
   filter: blur(1px);
-  /* opacity: 0.7; */
   transition: 0.5s;
-  /* background: black; */
 }
 
 .bicicleta-imagens a:hover:nth-child(1n + 2) {
   border: 2px solid var(--cor-p1);
   border-radius: 4px;
   cursor: pointer;
-  /* opacity: 1; */
   background: white;
   filter: blur(0px);
+  cursor: pointer;
 }
 
 .bicicleta-conteudo > p {

@@ -53,13 +53,33 @@
 }
 
 @media (max-width: 800px) {
-  .lojas,
-  .lojas-conteudo {
+  .lojas {
     grid-template-columns: 1fr;
     gap: 16px;
   }
   .lojas h2 {
     grid-column: auto;
     margin-bottom: 20px;
+    max-width: fit-content;
+  }
+  .lojas-dados p,
+  .lojas h2,
+  .lojas-conteudo h3,
+  .lojas-horario p {
+    max-width: fit-content;
+  }
+  .lojas-horario {
+    grid-column: 1;
+  }
+  .lojas-conteudo {
+    grid-template-columns: 1fr;
+    /* gap: 16px; */
+  }
+  .lojas-dados {
+    grid-template-columns: 2fr;
+  }
+
+  .place-card {
+    display: none;
   }
 } ;
