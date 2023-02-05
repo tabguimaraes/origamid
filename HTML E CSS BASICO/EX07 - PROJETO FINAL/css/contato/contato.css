@@ -72,7 +72,7 @@
 
 @media (max-width: 800px) {
   #contato {
-    background: linear-gradient(var(--cor-11) 500px, var(--cor-1) 0px);
+    background: linear-gradient(var(--cor-11) 400px, var(--cor-1) 0px);
   }
   .contato {
     grid-template-columns: 1fr;

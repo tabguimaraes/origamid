@@ -54,10 +54,19 @@
     padding: 40px 20px;
     justify-self: center;
   }
+  .depoimento-conteudo p {
+    font-size: 1.5rem;
+  }
   .depoimento img {
     max-height: 200px;
   }
   .depoimento p::before {
     left: -45px;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento-conteudo p {
+    font-size: 1.2rem;
   }
 }

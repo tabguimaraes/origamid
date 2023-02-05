@@ -55,31 +55,21 @@
 @media (max-width: 800px) {
   .lojas {
     grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  .lojas h2 {
-    grid-column: auto;
-    margin-bottom: 20px;
-    max-width: fit-content;
-  }
-  .lojas-dados p,
-  .lojas h2,
-  .lojas-conteudo h3,
-  .lojas-horario p {
-    max-width: fit-content;
-  }
-  .lojas-horario {
-    grid-column: 1;
-  }
-  .lojas-conteudo {
-    grid-template-columns: 1fr;
-    /* gap: 16px; */
-  }
-  .lojas-dados {
-    grid-template-columns: 2fr;
+    gap: 32px;
+    padding: 20px 20px 60px 20px;
   }
 
-  .place-card {
-    display: none;
+  .lojas h2 {
+    grid-column: 1;
+    margin-bottom: 12px;
   }
+  .lojas-conteudo {
+    grid-template-columns: auto auto;
+  }
+
+  /* .lojas h3,
+  .lojas-dados p,
+  .lojas-dados a {
+    max-width: fit-content;
+  } */
 } ;

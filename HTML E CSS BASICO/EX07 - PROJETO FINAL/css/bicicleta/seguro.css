@@ -23,14 +23,15 @@
 
 @media (max-width: 800px) {
   .seguro-bg {
-    box-shadow: inset 0 -120px var(--cor-12);
+    box-shadow: inset 0 -260px var(--cor-12);
   }
   .seguro {
     grid-template-columns: 1fr;
+    display: grid;
   }
   .seguro-conteudo {
     grid-row: 1;
-    padding-top: 40px;
-    padding-bottom: 0px;
+    padding: 40px 20px;
+    /* padding-bottom: 120px; */
   }
 } ;

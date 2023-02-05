@@ -26,6 +26,7 @@
   grid-column: 2;
   display: block;
   text-align: right;
+  /* width: fit-content; */
 }
 
 .seguros-item ul {
@@ -59,6 +60,9 @@
 @media (max-width: 800px) {
   .seguro-container {
     grid-template-columns: 1fr;
+  }
+  .seguros-item {
+    grid-template-columns: 1fr auto;
   }
 }
 

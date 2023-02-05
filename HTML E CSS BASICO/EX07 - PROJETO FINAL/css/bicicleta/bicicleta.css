@@ -121,7 +121,7 @@
 @media (max-width: 800px) {
   .bicicleta {
     grid-template-columns: 1fr;
-    padding: 40px 20px;
+    padding: 20px;
   }
   .bicicleta-imagens {
     grid-row: 2;

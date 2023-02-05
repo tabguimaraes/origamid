@@ -48,15 +48,17 @@
 
 @media (max-width: 800px) {
   .parceiros {
-    padding-bottom: 60px;
+    padding: 40px 20px;
   }
 
   .parceiros h2 {
     margin-bottom: 20px;
+    padding-top: 0;
   }
 
   .parceiros ul {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0;
   }
 
   .parceiros li {
