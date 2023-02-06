@@ -153,19 +153,17 @@
   display: grid;
 }
 
-.orcamento-termo {
+.orcamento-aceite {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
-.orcamento-termo label {
-  opacity: 0;
-  margin: auto 0;
+.div-termos label {
+  margin: 0;
 }
 
 .div-termos {
   display: flex;
-  align-items: center;
 }
 
 @media (max-width: 1200px) {
