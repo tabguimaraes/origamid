@@ -72,7 +72,8 @@
 }
 
 .titulo-bg {
-  background: var(--cor-11);
+  background: url("../../img/dec/bottom-left.svg") no-repeat top 40px right 20px
+    var(--cor-11);
 }
 
 .titulo p {
