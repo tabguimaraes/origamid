@@ -45,6 +45,15 @@
   content: "”";
 }
 
+@media (min-width: 1200px) {
+  .depoimento img {
+    max-width: 500px;
+  }
+  .depoimento {
+    grid-template-columns: auto 1fr;
+  }
+}
+
 @media (max-width: 800px) {
   .depoimento {
     grid-template-columns: 1fr;

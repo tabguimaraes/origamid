@@ -19,6 +19,7 @@
 .introducao-conteudo {
   align-self: end;
   padding-bottom: 200px;
+  background: url("../../img/dec/bottom-left.svg") no-repeat bottom 100px left;
 }
 
 .introducao h1 {
@@ -40,7 +41,14 @@
 
   .introducao-conteudo {
     align-self: center;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
+    background: url("../../img/dec/bottom-left.svg") no-repeat bottom 0px left;
+  }
+}
+
+@media (max-width: 1000px) {
+  .introducao-conteudo {
+    background: none;
   }
 }
 
