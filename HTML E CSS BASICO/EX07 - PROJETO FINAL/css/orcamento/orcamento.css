@@ -154,8 +154,18 @@
 }
 
 .orcamento-termo {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.orcamento-termo label {
+  opacity: 0;
+  margin: auto 0;
+}
+
+.div-termos {
   display: flex;
-  grid-column: 1/-1;
+  align-items: center;
 }
 
 @media (max-width: 1200px) {
