@@ -22,14 +22,14 @@
 
 // curso.completar()
 
-const ativar = document.querySelector(".ativar");
+const coordenadas = window.innerWidth;
 
-// console.log(ativar);
+window.addEventListener("mousemove", posicao);
 
-function ativarAoClick() {
-  console.log("clicou em ", ativar);
+function posicao(event) {
+  const pos = {
+    x: event.x,
+    y: event.y,
+  };
+  console.log(pos);
 }
-
-ativar.addEventListener("click", ativarAoClick);
-
-console.log(ativar);
