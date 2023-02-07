@@ -22,12 +22,14 @@
 
 // curso.completar()
 
-const ativar = document.querySelector(".modo");
+const ativar = document.querySelector(".ativar");
+
+// console.log(ativar);
+
+function ativarAoClick() {
+  console.log("clicou em ", ativar);
+}
+
+ativar.addEventListener("click", ativarAoClick);
+
 console.log(ativar);
-console.log("Teste");
-
-// function ativar() {
-//   document.body.style.color = "black";
-// }
-
-// modoNoturno.addEventListener("click", ativar);
