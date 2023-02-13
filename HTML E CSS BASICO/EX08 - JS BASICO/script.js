@@ -58,19 +58,14 @@
 
 document.querySelector("button").addEventListener("click", somarValor);
 
-const resultado = document.querySelector(".resultado");
-const total = Number(resultado.innerText)
-
 function somarValor() {
-//   const resultado = document.querySelector(".resultado");
-  total = total + 1;
-  resultado.innerText = total;
-  console.log(total);
+  const resultado = document.querySelector(".resultado");
+  resultado.innerHTML = Number(resultado.innerHTML) + 1;
 }
 
-if (document.querySelector("button") total >= 0 && total < 10) {
-  console.log(somarValor());
-}
+// if (document.querySelector("button") total >= 0 && total < 10) {
+//   console.log(somarValor());
+// }
 
 // if (document.querySelector("button")) {
 //   console.log("Existe");
@@ -89,5 +84,3 @@ if (document.querySelector("button") total >= 0 && total < 10) {
 // } else {
 //   console.log("Não existe");
 // }
-
-somarValor();
