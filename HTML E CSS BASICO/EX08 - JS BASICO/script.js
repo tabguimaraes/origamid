@@ -53,13 +53,16 @@
 // console.log("Elemento existe?: " + Boolean(elementoNaoExiste));
 
 function executaSoma() {
-  document.querySelector("button").addEventListener("click", somarValor);
+  if (document.querySelector("button")) {
+    document.querySelector("button").addEventListener("click", somarValor);
+  }
   const resultado = document.querySelector(".resultado");
 
   function somarValor() {
-    valor = Number(resultado.innerText);
+    valor = +resultado.innerText;
     if (document.querySelector("button") && valor >= 0 && valor < 10) {
       resultado.innerText = valor + 1;
+      console.log(valor);
     } else {
       resultado.innerText = "Fora do range";
     }
