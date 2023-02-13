@@ -52,36 +52,17 @@
 // console.log("Elemento existe?: " + Boolean(elemento));
 // console.log("Elemento existe?: " + Boolean(elementoNaoExiste));
 
-// document.querySelector(".resultado").addEventListener("change", verificarValor);
-
-// document.querySelector("button").addEventListener("click", somarValor);
-
-document.querySelector("button").addEventListener("click", somarValor);
-
-function somarValor() {
+function executaSoma() {
+  document.querySelector("button").addEventListener("click", somarValor);
   const resultado = document.querySelector(".resultado");
-  resultado.innerText = Number(resultado.innerText) + 1;
-  console.log(resultado);
+
+  function somarValor() {
+    valor = Number(resultado.innerText);
+    if (document.querySelector("button") && valor >= 0 && valor < 10) {
+      resultado.innerText = valor + 1;
+    } else {
+      resultado.innerText = "Fora do range";
+    }
+  }
 }
-
-// if (document.querySelector("button") total >= 0 && total < 10) {
-//   console.log(somarValor());
-// }
-
-// if (document.querySelector("button")) {
-//   console.log("Existe");
-//   const resultado = document.querySelector(".resultado");
-
-//   function somarValor() {
-//     if (resultado >= 0 && resultado < 10) {
-//       const soma = resultado + 1;
-//       document.querySelector(".resultado").innerText = soma;
-
-//       console.log(soma);
-//     } else {
-//       console.log("Fora do range");
-//     }
-//   }
-// } else {
-//   console.log("Não existe");
-// }
+executaSoma();
