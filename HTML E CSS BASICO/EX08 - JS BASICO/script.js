@@ -52,13 +52,42 @@
 // console.log("Elemento existe?: " + Boolean(elemento));
 // console.log("Elemento existe?: " + Boolean(elementoNaoExiste));
 
+// document.querySelector(".resultado").addEventListener("change", verificarValor);
+
+// document.querySelector("button").addEventListener("click", somarValor);
+
+document.querySelector("button").addEventListener("click", somarValor);
+
 const resultado = document.querySelector(".resultado");
-const botao = document.querySelector("button");
+const total = Number(resultado.innerText)
 
-console.log(resultado);
+function somarValor() {
+//   const resultado = document.querySelector(".resultado");
+  total = total + 1;
+  resultado.innerText = total;
+  console.log(total);
+}
 
-// if (resultado) {
-//   console.log("teste ok");
+if (document.querySelector("button") total >= 0 && total < 10) {
+  console.log(somarValor());
+}
+
+// if (document.querySelector("button")) {
+//   console.log("Existe");
+//   const resultado = document.querySelector(".resultado");
+
+//   function somarValor() {
+//     if (resultado >= 0 && resultado < 10) {
+//       const soma = resultado + 1;
+//       document.querySelector(".resultado").innerText = soma;
+
+//       console.log(soma);
+//     } else {
+//       console.log("Fora do range");
+//     }
+//   }
 // } else {
-//   console.log("não ok");
+//   console.log("Não existe");
 // }
+
+somarValor();
