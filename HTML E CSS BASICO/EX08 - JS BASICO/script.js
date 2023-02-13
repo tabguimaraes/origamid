@@ -60,7 +60,8 @@ document.querySelector("button").addEventListener("click", somarValor);
 
 function somarValor() {
   const resultado = document.querySelector(".resultado");
-  resultado.innerHTML = Number(resultado.innerHTML) + 1;
+  resultado.innerText = Number(resultado.innerText) + 1;
+  console.log(resultado);
 }
 
 // if (document.querySelector("button") total >= 0 && total < 10) {
