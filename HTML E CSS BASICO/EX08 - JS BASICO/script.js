@@ -55,12 +55,14 @@
 function executaSoma() {
   if (document.querySelector("button")) {
     document.querySelector("button").addEventListener("click", somarValor);
+  } else {
+    console.log("botão desativado");
   }
   const resultado = document.querySelector(".resultado");
 
   function somarValor() {
     valor = +resultado.innerText;
-    if (document.querySelector("button") && valor >= 0 && valor < 10) {
+    if (valor >= 0 && valor < 10) {
       resultado.innerText = valor + 1;
       console.log(valor);
     } else {
