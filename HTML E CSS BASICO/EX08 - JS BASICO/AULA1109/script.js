@@ -9,5 +9,9 @@ function galeriaClick(imagem) {
 }
 
 function trocarImagem(event) {
-  console.log(event);
+  const imagemClicada = event.currentTarget;
+  const imgPrincipal = document.querySelector("#imgPrincipal");
+  imgPrincipal.src = imagemClicada.src;
+  imgPrincipal.alt = imagemClicada.alt;
+  // console.log(imagemClicada);
 }
