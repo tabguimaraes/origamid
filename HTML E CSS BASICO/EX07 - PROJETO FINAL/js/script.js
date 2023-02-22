@@ -1,13 +1,12 @@
-console.log("OK");
-
 const links = document.querySelectorAll(".header-menu a");
 
 function ativarLink(linkAtivo) {
   const url = location.href;
   const href = linkAtivo.href;
-  //   console.log(href);
-  //   console.log("");
-  console.log(url);
+
+  if (url.includes(href)) {
+    linkAtivo.classList.add("ativo");
+  }
 }
 
 links.forEach(ativarLink);
