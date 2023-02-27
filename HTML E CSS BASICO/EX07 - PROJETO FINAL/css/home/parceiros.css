@@ -1,12 +1,12 @@
 .parceiros {
   padding: 60px 0 120px 0;
-  border: 2px solid transparent;
+  /* border: 2px solid transparent; */
   margin-bottom: 20px;
 }
 
-.parceiros:hover {
+/* .parceiros:hover {
   border: 2px solid var(--cor-2);
-}
+} */
 
 .parceiros h2 {
   margin-bottom: 60px;
