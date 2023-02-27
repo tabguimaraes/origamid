@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
-  /* padding: 0 20px 120px 20px; */
+  padding: 0 20px 60px 20px;
 }
 
 .lojas h2 {
