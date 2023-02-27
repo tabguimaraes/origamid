@@ -5,7 +5,7 @@
 @import "./utilidades/cores.css";
 @import "./utilidades/componentes.css";
 @import "./utilidades/formulario.css";
-/* @import "./utilidades/simple-anime.css"; */
+@import "./utilidades/simple-anime.css";
 
 /* Header e Footer */
 @import "./global/header.css";
@@ -39,4 +39,3 @@
 
 /* Termos */
 @import "./termos/termos.css";
-
