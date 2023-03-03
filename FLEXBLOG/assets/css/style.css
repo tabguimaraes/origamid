@@ -6,6 +6,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: var(--fontePrincipal);
 }
 
 :root {
@@ -32,14 +33,13 @@
   font-style: italic;
 }
 
-.superinfo-bg {
-  background: #122ab2;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+.superinfo-bg {
+  background: #122ab2;
 }
 
 .superinfo,
@@ -63,10 +63,15 @@
 }
 
 .menu-logo {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
 .nav-links a {
   border: 1px solid black;
-  padding: 20px;
+  padding: 15px;
+}
+
+.introducao h1 {
+  font-size: 3rem;
+  padding: 60px 10px;
 }
