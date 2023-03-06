@@ -9,6 +9,10 @@
   font-family: var(--fontePrincipal);
 }
 
+img {
+  max-width: 100%;
+}
+
 :root {
   --fontePrincipal: "Nunito", sans-serif;
 }
@@ -66,12 +70,26 @@
   font-size: 2.25rem;
 }
 
-.nav-links a {
-  border: 1px solid black;
+.nav-links {
   padding: 15px;
+  gap: 50px;
 }
 
-.introducao h1 {
+.nav-links:last-child {
+  padding-right: 0;
+}
+
+h1.introducao {
   font-size: 3rem;
-  padding: 60px 10px;
+  padding: 60px 0;
+}
+
+.sobre,
+.produtos-container {
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 50px;
 }
