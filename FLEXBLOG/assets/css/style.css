@@ -7,9 +7,11 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: var(--fontePrincipal);
+  color: #222;
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
