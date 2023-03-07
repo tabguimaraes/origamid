@@ -95,3 +95,19 @@ h1.introducao {
   gap: 40px;
   padding-top: 50px;
 }
+
+.preco {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 40px 0;
+}
+
+.preco-info {
+  padding: 20px 0;
+}
+
+.preco-item a {
+  display: block;
+  padding: 20px;
+}
