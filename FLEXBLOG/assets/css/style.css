@@ -42,10 +42,12 @@ img {
 .container {
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .superinfo-bg {
   background: #122ab2;
+  padding: 20px 0;
 }
 
 .superinfo,
@@ -60,6 +62,7 @@ img {
 
 .superinfo,
 .superinfo a,
+.superinfo p,
 .menu a {
   color: white;
 }
@@ -73,11 +76,14 @@ img {
 }
 
 .nav-links {
-  padding: 15px;
   gap: 50px;
 }
+.nav-links a {
+  display: block;
+  padding: 15px;
+}
 
-.nav-links:last-child {
+.nav-links:last-child li {
   padding-right: 0;
 }
 
