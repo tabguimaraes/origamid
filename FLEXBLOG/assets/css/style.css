@@ -67,6 +67,10 @@ img {
   color: white;
 }
 
+.menu a:hover{
+  color: #122ab2;
+}
+
 .menu-bg {
   background-color: #2c70ff;
 }
@@ -80,12 +84,16 @@ img {
 }
 .nav-links a {
   display: block;
-  padding: 15px;
+  padding: 10px;
 }
 
-.nav-links:last-child li {
+#contato a {
   padding-right: 0;
 }
+
+/* .nav-links li:last-child {
+  padding-right: 0;
+} */
 
 h1.introducao {
   font-size: 3rem;
@@ -117,3 +125,16 @@ h1.introducao {
   display: block;
   padding: 20px;
 }
+
+@media (max-width: 800px) {
+  .nav-links {
+    gap: 0;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+  #contato a {
+    padding-right: 10px;
+  }
+} ;
