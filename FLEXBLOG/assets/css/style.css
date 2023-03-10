@@ -67,7 +67,7 @@ img {
   color: white;
 }
 
-.menu a:hover{
+.menu a:hover {
   color: #122ab2;
 }
 
@@ -127,8 +127,9 @@ h1.introducao {
 }
 
 @media (max-width: 800px) {
-  .nav-links {
-    gap: 0;
+  .nav-links,
+  .menu {
+    gap: 30px;
   }
 
   .menu {
@@ -136,5 +137,14 @@ h1.introducao {
   }
   #contato a {
     padding-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links,
+  .menu,
+  .container {
+    gap: 0px;
+    padding: 0;
   }
 } ;
