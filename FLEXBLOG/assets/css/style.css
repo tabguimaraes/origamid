@@ -130,9 +130,11 @@ img {
 
 .preco {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: flex-end;
   padding: 40px 0;
+  background: #f7f7f7;
 }
 
 .preco-info {
@@ -142,6 +144,54 @@ img {
 .preco-item a {
   display: block;
   padding: 20px;
+}
+
+.preco-item h3 {
+  font-size: 3em;
+  color: #a4a4a4;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.preco-item span {
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0 5px 0;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.preco-item sup {
+  font-size: 1.5rem;
+}
+
+.preco-item ul {
+  max-width: 300px;
+  margin: 20px auto;
+  font-size: 1.25em;
+  font-style: italic;
+  color: #7c7c7c;
+}
+
+.preco-item li {
+  min-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.preco-item li::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #2c70ff;
+  border-radius: 50%;
 }
 
 .produtos-container {
@@ -185,6 +235,10 @@ img {
   }
   #contato a {
     padding-right: 10px;
+  }
+  .preco {
+    max-width: fit-content;
+    align-items: center;
   }
 }
 
