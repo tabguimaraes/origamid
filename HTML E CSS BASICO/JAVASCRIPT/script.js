@@ -146,4 +146,70 @@
 
 // cachorro.latir();
 
+// const familia = ["Miguel", "Marlene", "Cida", "Tiago"];
 
+// familia.forEach(function (item, index) {
+//   console.log(`${index} ${item}`);
+// });
+
+// // Crie uma array com os anos que o Brasil ganhou a copa
+// // 1959, 1962, 1970, 1994, 2002
+
+// var copas = ["1959", "1962", "1970", "1994", "2002"];
+
+// // Interaja com a array utilizando um loop, para mostrar
+// // no console a seguinte mensagem, `O Brasil ganhou a copa de ${ano}`
+// copas.forEach(function (ano) {
+//   console.log(`O brasil ganhou a copa de ${ano}`);
+// });
+
+// // Interaja com um loop nas frutas abaixo e pare ao chegar em Pera
+// var frutas = ["Banana", "Maçã", "Pera", "Uva", "Melância", "Goiaba"];
+
+// for (i = 0; i < frutas.length; i++) {
+//   console.log(frutas[i]);
+//   if (frutas[i] === "Pera") {
+//     break;
+//   }
+// }
+
+// // Coloque a última fruta da array acima em uma variável,
+// // sem remover a mesma da array.
+
+// var ultimaFruta = frutas[frutas.length - 1];
+
+// console.log(`O array completo é: ${frutas}`);
+// console.log(`essa é a última fruta do array: ${ultimaFruta}`);
+
+// var idade = 18;
+
+// idade < 18 ? console.log("Menor de idade") : console.log("maior de idade");
+
+// // idade < 18 ? console.log("menor de 18 anos") : console.log("maior de 18 anos ");
+
+// // var podeEntrar = idade < 18 ? "Menor de 18 anos" : "Maior de 18 anos";
+// var podeEntrar = idade < 18 ? "menor de idade" : "maior de idade";
+
+// console.log(podeEntrar);
+
+// Some 500 ao valor de scroll abaixo,
+// atribuindo o novo valor a scroll
+var scroll = 1000;
+scroll += 500;
+console.log(scroll);
+
+// Atribua true para a variável darCredito,
+// caso o cliente possua carro e casa.
+// E false caso o contrário.
+var possuiCarro = true;
+var possuiCasa = true;
+var darCredito;
+
+darCredito =
+  possuiCarro && possuiCasa
+    ? "Dar crédito ao cliente"
+    : "Negar crédito ao cliente";
+
+// darCredito = possuiCarro && possuiCasa;
+
+console.log(darCredito);
