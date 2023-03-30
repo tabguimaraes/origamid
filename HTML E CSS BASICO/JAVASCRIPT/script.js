@@ -194,22 +194,33 @@
 
 // Some 500 ao valor de scroll abaixo,
 // atribuindo o novo valor a scroll
-var scroll = 1000;
-scroll += 500;
-console.log(scroll);
+// var scroll = 1000;
+// scroll += 500;
+// console.log(scroll);
 
-// Atribua true para a variável darCredito,
-// caso o cliente possua carro e casa.
-// E false caso o contrário.
-var possuiCarro = true;
-var possuiCasa = true;
-var darCredito;
+// // Atribua true para a variável darCredito,
+// // caso o cliente possua carro e casa.
+// // E false caso o contrário.
+// var possuiCarro = true;
+// var possuiCasa = true;
+// var darCredito;
 
-darCredito =
-  possuiCarro && possuiCasa
-    ? "Dar crédito ao cliente"
-    : "Negar crédito ao cliente";
+// darCredito =
+//   possuiCarro && possuiCasa
+//     ? "Dar crédito ao cliente"
+//     : "Negar crédito ao cliente";
 
-// darCredito = possuiCarro && possuiCasa;
+// // darCredito = possuiCarro && possuiCasa;
 
-console.log(darCredito);
+// console.log(darCredito);
+
+function somarDois(x) {
+  const somar = 2;
+  return console.log(x + somar);
+}
+function dividirDois(x) {
+  const dividir = 2;
+  return console.log(x / dividir);
+}
+somarDois(4);
+dividirDois(6);
