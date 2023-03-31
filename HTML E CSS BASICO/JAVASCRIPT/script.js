@@ -210,17 +210,52 @@
 //     ? "Dar crédito ao cliente"
 //     : "Negar crédito ao cliente";
 
-// // darCredito = possuiCarro && possuiCasa;
+// darCredito = possuiCarro && possuiCasa;
 
 // console.log(darCredito);
 
-function somarDois(x) {
-  const somar = 2;
-  return console.log(x + somar);
-}
-function dividirDois(x) {
-  const dividir = 2;
-  return console.log(x / dividir);
-}
-somarDois(4);
-dividirDois(6);
+// function somarDois(x) {
+//   const somar = 2;
+//   return console.log(x + somar);
+// }
+// function dividirDois(x) {
+//   const dividir = 2;
+//   return console.log(x / dividir);
+// }
+// somarDois(4);
+// dividirDois(6);
+
+// const teste = document.querySelector("h1");
+
+// console.log(teste);
+
+// teste.addEventListener("click", function () {
+//   console.log("clicou");
+// });
+
+// Retorne o url da página atual utilizando o objeto window
+
+// const pagina = window;
+// console.log(pagina);
+// console.log("");
+// const url = location.href;
+// console.log(url);
+// console.log("");
+
+// // Seleciona o primeiro elemento da página que
+// // possua a classe ativo
+
+// const ativo = document.querySelector(".ativo");
+// console.log(ativo);
+// console.log("");
+
+// // Retorne a linguagem do navegador
+
+// console.log(navigator.language);
+// console.log("");
+
+// // Retorne a largura da janela
+
+// console.log(pagina.innerWidth);
+// console.log(screen.width);
+// console.log(screen.availWidth);
