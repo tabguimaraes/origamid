@@ -259,3 +259,50 @@
 // console.log(pagina.innerWidth);
 // console.log(screen.width);
 // console.log(screen.availWidth);
+
+// function areaQuadrado(lado) {
+//   console.log(lado * lado);
+// }
+
+// areaQuadrado(8);
+
+// let areaRetangulo = (a, b) => a * b;
+
+// console.log(areaRetangulo(4, 5));
+
+// function calculoIMC(peso, altura) {
+//   let imc = peso / (altura * altura);
+//   return imc.toFixed();
+// }
+
+// console.log(calculoIMC(80, 1.8));
+
+// function verificarIdade(entrada) {
+//   if (typeof entrada !== "number") {
+//     console.log("Preencha um número");
+//   } else {
+//     function terceiraIdade(entrada) {
+//       if (entrada === 42) {
+//         return console.log(
+//           "A resposta para o sentido da Vida, do Universo e tudo mais é....42"
+//         );
+//       } else {
+//         if (entrada >= 60) {
+//           return console.log("Terceira idade");
+//         } else {
+//           return console.log("Ainda não é terceira idade");
+//         }
+//       }
+//     }
+//     terceiraIdade(entrada);
+//   }
+// }
+
+// verificarIdade(42);
+
+// function faltaVisitar(paisesVisitados) {
+//   let totalPaises = 193;
+//   return console.log(`Falta visitar ${totalPaises - paisesVisitados} países`);
+// }
+
+// faltaVisitar(1);
