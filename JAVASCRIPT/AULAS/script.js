@@ -359,3 +359,9 @@
 // let testeString = "Teste de String EmbaraLhada".toLowerCase();
 
 // console.log(testeString);
+
+let nome = "111.1111.1111.11.";
+
+nome = nome.replace(".", "");
+
+console.log(nome);
