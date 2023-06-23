@@ -306,3 +306,56 @@
 // }
 
 // faltaVisitar(1);
+
+// Crie um objeto com os seus dados pessoais
+// Deve possui pelo menos duas propriedades nome e sobrenome
+
+// const cadastro = {
+//   nome: "Tiago",
+//   sobreNome: "Guimarães",
+//   idade: 42,
+// };
+
+// Crie um método no objeto anterior, que mostre o seu nome completo
+// cadastro.mostrarNome = function mostrarNome() {
+//   return `${this.nome} ${this.sobreNome}`;
+// };
+
+// console.log(cadastro.mostrarNome());
+
+// Modifique o valor da propriedade preco para 3000
+// var carro = {
+//   preco: 1000,
+//   portas: 4,
+//   marca: "Audi",
+// };
+
+// carro.preco = 3000;
+
+// console.log(carro.preco);
+
+// Crie um objeto de um cachorro que represente um labrador,
+// preto com 10 anos, que late ao ver um homem
+
+// let cachorro = {
+//   cor: "pReto".toLowerCase(),
+//   idade: 10,
+//   latir(pessoa) {
+//     if (pessoa.toString().toLowerCase() === "homem") {
+//       //Com o return + console.log(`Viu um ${pessoa} e latiu`), sempre retorna Undefined
+//       return `Viu um ${pessoa.toLowerCase()} e latiu`; // toLowerCase para normalizar a saída, independente se a entrada foi em maiuscula, minuscula, etc
+//     } else {
+//       return "Não latiu";
+//     }
+//   },
+//   peso: 20,
+//   raca: "labrador",
+// };
+
+// console.log(cachorro.latir("hOmEm"));
+
+// console.log(cachorro.cor);
+
+// let testeString = "Teste de String EmbaraLhada".toLowerCase();
+
+// console.log(testeString);
