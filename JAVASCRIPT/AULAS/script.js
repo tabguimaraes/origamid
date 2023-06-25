@@ -455,11 +455,23 @@
 // }
 // dividirDois(6);
 
-var numero = 50;
+// var numero = 50;
 
-for (let numero = 1; numero <= 10; numero++) {
-  console.log(numero);
-}
+// for (let numero = 1; numero <= 10; numero++) {
+//   console.log(numero);
+// }
 
-const total = 10 * numero;
-console.log(total);
+// const total = 10 * numero;
+// console.log(total);
+
+const calculadora = document.querySelector(".calculadora", ".numeros");
+
+console.log(calculadora);
+
+// h1Selecionado.classList.toggle("ativo");
+
+// console.log(h1Selecionado.classList[0]);
+
+calculadora.addEventListener("click", function (event) {
+  console.log(event.target);
+});

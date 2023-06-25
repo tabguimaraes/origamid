@@ -1,0 +1,40 @@
+/* RESET DE ESTILOS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  display: inline;
+  /* max-width: 10ch; */
+}
+
+.calculadora {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  /* justify-items: center; */
+  width: fit-content;
+  justify-self: center;
+  margin: 50px auto;
+}
+
+.calculadora div {
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.numeros {
+  justify-self: center;
+}
