@@ -410,8 +410,8 @@
 
 // console.log(ultimaFruta);
 
-var x = 5;
-var y = 10;
+// var x = 5;
+// var y = 10;
 // x += y; // x = x + y (15)
 // x -= y; // x = x - y (-5)
 // x *= y; // x = x * y (50)
@@ -428,19 +428,38 @@ var y = 10;
 
 // Some 500 ao valor de scroll abaixo,
 // atribuindo o novo valor a scroll
-var scroll = 1000;
+// var scroll = 1000;
 
-scroll += 500;
+// scroll += 500;
 
-console.log(scroll);
+// console.log(scroll);
 
-// Atribua true para a variável darCredito,
-// caso o cliente possua carro e casa.
-// E false caso o contrário.
-var possuiCarro = false;
-var possuiCasa = true;
-var darCredito = possuiCasa && possuiCarro ? "Tem crédito" : "Não tem crédito";
+// // Atribua true para a variável darCredito,
+// // caso o cliente possua carro e casa.
+// // E false caso o contrário.
+// var possuiCarro = false;
+// var possuiCasa = true;
+// var darCredito = possuiCasa && possuiCarro ? "Tem crédito" : "Não tem crédito";
 
-console.log(darCredito);
+// console.log(darCredito);
 
+// const dois = 2;
+// function somarDois(x) {
+//   return console.log(x + dois);
+// }
 
+// somarDois(4);
+
+// function dividirDois(x) {
+//   return console.log(x / dois);
+// }
+// dividirDois(6);
+
+var numero = 50;
+
+for (let numero = 1; numero <= 10; numero++) {
+  console.log(numero);
+}
+
+const total = 10 * numero;
+console.log(total);
