@@ -1,11 +1,23 @@
-console.log("Conexão ok");
+console.log("Conexão ok!");
+
+const animais = document.getElementById("animais");
+console.log(animais);
+
+const gridSection = document.getElementsByClassName("grid-section");
+console.log(gridSection);
 
 const html = document.querySelector("html");
+// console.log(html);
 
-// const animais = html.querySelector(".grid-section" + ".faq");
-// console.log(animais);
+const animaisDescricao = html.querySelectorAll(".animais-descricao h2");
+console.log(animaisDescricao[0].innerHTML);
 
-// const animais = document.getElementById("animais");
+// // const animais = html.querySelector(".grid-section" + ".faq");
+// const animaisQuery = document.querySelector("#animais");
+// console.log(animaisQuery.innerText);
+
+// const animaisGet = document.getElementById("animais");
+// console.log(animaisGet.innerText);
 
 // if (animais) {
 //   console.log("Ok");
@@ -15,22 +27,27 @@ const html = document.querySelector("html");
 // EXERCICIOS
 // Retorne no console todas as imagens do site
 
-// console.log(html.querySelectorAll("img"));
-// console.log("");
+console.log(html.querySelectorAll("img"));
+console.log("");
 // console.log(html.getElementsByTagName("img"));
 
 // // Retorne no console apenas as imagens que começaram com a palavra imagem
 
-// console.log(html.querySelectorAll("[src*='imagem']"));
+console.log(html.querySelectorAll("[src*='imagem']"));
 
 // // Selecione todos os links internos (onde o href começa com #)
-// console.log(html.querySelectorAll("[href*='#']"));
+console.log(html.querySelectorAll("[href*='#']"));
 
 // // Selecione o primeiro h2 dentro de .animais-descricao
-// console.log(html.querySelector(".animais-descricao h2"));
+console.log(html.querySelector(".animais-descricao h2"));
 
 // // Selecione o último p do site
-// console.log(html.querySelectorAll(".copy p"));
+console.log(html.querySelectorAll(".copy p").innerHTML); //Não extrai o texto / valor de 'p'
+console.log(html.querySelector(".copy p").innerHTML);
+
+const paragrafos = html.querySelectorAll("p");
+console.log(paragrafos[paragrafos.length - 1].innerText);
+console.log(paragrafos[--paragrafos.length].innerHTML);
 
 // const footer = html.querySelectorAll(".copy p");
 // // console.log(footer);
