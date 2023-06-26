@@ -464,7 +464,7 @@
 // const total = 10 * numero;
 // console.log(total);
 
-const calculadora = document.querySelector(".calculadora", ".numeros");
+const calculadora = document.querySelectorAll(".numeros");
 
 console.log(calculadora);
 
@@ -472,6 +472,10 @@ console.log(calculadora);
 
 // console.log(h1Selecionado.classList[0]);
 
-calculadora.addEventListener("click", function (event) {
-  console.log(event.target);
+calculadora.forEach((numeros) => {
+  numeros.addEventListener("click", (event) => {
+    console.log(event.target);
+  });
 });
+
+console.log("teste");

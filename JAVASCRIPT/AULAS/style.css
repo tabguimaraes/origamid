@@ -13,19 +13,19 @@ img {
   max-width: 100%;
 }
 
-h1 {
+/* h1 {
   display: inline;
-  /* max-width: 10ch; */
-}
+} */
 
 .calculadora {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   /* justify-items: center; */
-  width: fit-content;
+  width: 400px;
   justify-self: center;
   margin: 50px auto;
+  /* border: 1px solid black; */
 }
 
 .calculadora div {
@@ -36,5 +36,17 @@ h1 {
 }
 
 .numeros {
-  justify-self: center;
+  /* justify-self: center; */
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.numeros:hover {
+  background-color: darkgray;
+}
+
+.calculadora h1 {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
 }
