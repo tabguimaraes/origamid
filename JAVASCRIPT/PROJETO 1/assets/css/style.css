@@ -13,10 +13,6 @@ img {
   max-width: 100%;
 }
 
-ul {
-  list-style: none;
-}
-
 body {
   background: #faf6ed;
   color: #222;
@@ -26,7 +22,7 @@ body {
 }
 
 .menu {
-  grid-column: 3 / 5;
+  grid-column: 3 / -1;
   margin-top: 2rem;
   margin-bottom: 2rem;
   background: #fb5;
@@ -43,7 +39,6 @@ body {
   padding: 10px;
   margin-right: 10px;
   color: #222;
-  text-decoration: none;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   text-transform: uppercase;
@@ -173,7 +168,7 @@ body {
 }
 
 .copy {
-  grid-column: 3/5;
+  grid-column: 3/-1;
   margin-bottom: 2rem;
   background: #fb5;
 }
