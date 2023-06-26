@@ -70,26 +70,30 @@ const paragrafos = html.querySelectorAll("p");
 // Mostre no console cada parágrado do site
 // console.log(paragrafos);
 
-paragrafos.forEach((item) => {
-  console.log(item);
-});
+// paragrafos.forEach((item) => {
+//   console.log(item);
+// });
 
-// Mostre o texto dos parágrafos no console
+// // Mostre o texto dos parágrafos no console
 
-paragrafos.forEach((item) => {
-  console.log(item.innerText);
-});
+// paragrafos.forEach((item) => {
+//   console.log(item.innerText);
+// });
 
-// Como corrigir os erros abaixo:
-const imgs = document.querySelectorAll("img");
+// // Como corrigir os erros abaixo:
+// const imgs = document.querySelectorAll("img");
 
-imgs.forEach((item, index) => {
-  console.log(item, index);
-});
+// imgs.forEach((item, index) => {
+//   console.log(item, index);
+// });
 
-let i = 0;
-imgs.forEach(() => {
-  console.log(i++);
-});
+// let i = 0;
+// imgs.forEach(() => {
+//   console.log(i++);
+// });
 
-imgs.forEach(() => i++);
+// imgs.forEach(() => i++);
+
+const menu = html.querySelector(".menu");
+
+console.log(menu.classList);
