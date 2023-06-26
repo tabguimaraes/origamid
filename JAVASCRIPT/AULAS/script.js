@@ -466,16 +466,34 @@
 
 const calculadora = document.querySelectorAll(".numeros");
 
-console.log(calculadora);
+// console.log(calculadora);
 
 // h1Selecionado.classList.toggle("ativo");
 
 // console.log(h1Selecionado.classList[0]);
 
+const mostraNumero = [];
 calculadora.forEach((numeros) => {
-  numeros.addEventListener("click", (event) => {
-    console.log(event.target);
+  numeros.addEventListener("click", () => {
+    // console.log(numeros);
+    const numeroAtual = Number(numeros.innerText);
+    mostraNumero.push(numeroAtual);
+    // mostraNumero = Number(mostraNumero);
+    console.log(mostraNumero);
   });
 });
 
-console.log("teste");
+// ITERAR NO ARRAY COM FOREACH, SOMANDO O VALOR A CADA ITERAÇÃO.
+
+// EX:
+
+let valorAtual;
+function somarValores() {
+  mostraNumero.forEach((item) => {
+    valorAtual = item;
+    valorAtual = valorAtual + item;
+    console.log(valorAtual);
+  });
+}
+
+somarValores();
