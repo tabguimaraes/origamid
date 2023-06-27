@@ -22,6 +22,9 @@ const gridFaq = html.querySelector(".grid-section" + ".faq");
 
 const imgs = document.querySelectorAll("img");
 
+const menu = html.querySelector(".menu");
+// console.log(menu);
+
 const linksMenu = html.querySelectorAll(".menu a");
 // console.log(linksMenu);
 
@@ -132,6 +135,7 @@ linksMenu[0].classList.add("ativo");
 
 // imgs.forEach((item) => {
 //   if (item.hasAttribute("alt")) {
+//     item.setAttribute("alt", "raposa");
 //     console.log(item);
 //   } else {
 //     console.log(item);
@@ -140,9 +144,56 @@ linksMenu[0].classList.add("ativo");
 
 // Modifique o href do link externo no menu
 
-console.log(linkExterno);
+// console.log(linkExterno);
 
-linkExterno.setAttribute("href", "https://www.origamid.com/teste");
-console.log(linkExterno);
+// linkExterno.setAttribute("href", "https://www.origamid.com/teste");
+// console.log(linkExterno);
 
 // console.log(html.querySelectorAll("[href*='#']"));
+
+// Verifique a distância da primeira imagem
+// em relação ao topo da página
+
+// const primeiraImg = html.querySelector("img").offsetTop;
+// console.log(primeiraImg);
+
+// Retorne a soma da largura de todas as imagens
+
+let larguraImg = 0;
+
+function somarLargura() {
+  imgs.forEach((item) => {
+    larguraImg += item.offsetWidth;
+  });
+  console.log(larguraImg);
+}
+window.onload = () => {
+  somarLargura();
+};
+
+// Verifique se os links da página possuem
+// o mínimo recomendado para telas utilizadas
+// com o dedo. (48px/48px de acordo com o google)
+
+console.log(linksMenu);
+
+linksMenu.forEach((item) => {
+  //   let eixoX = (item.getBoundingClientRect().x * 0.1).toFixed(0);
+  //   let eixoY = (item.getBoundingClientRect().y * 0.1).toFixed(0);
+  let eixoX = item.offsetWidth;
+  let eixoY = item.offsetHeight;
+
+  if (eixoX >= 48 && eixoY >= 48) {
+    console.log(`O link ${[item.innerHTML]} possui acessibilidade`);
+  } else {
+    console.log(`O link ${[item.innerHTML]} não possui acessibilidade`);
+  }
+});
+
+// Se o browser for menor que 720px,
+// adicione a classe menu-mobile ao menu
+
+const widthBrowser = window.matchMedia("(max-width: 720px)").matches;
+if (widthBrowser) {
+  menu.classList.add("menu-mobile");
+}
