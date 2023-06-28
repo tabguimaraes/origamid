@@ -3,6 +3,9 @@ console.log("Conexão ok!");
 const html = document.querySelector("html");
 // console.log(html);
 
+const itensBody = html.querySelector("body");
+// console.log(itensBody);
+
 const animais = document.getElementById("animais");
 // console.log(animais);
 
@@ -30,12 +33,17 @@ const linksMenu = html.querySelectorAll(".menu a");
 
 const linkExterno = html.querySelector("a[href*='https://www.origamid.com/']");
 
+const linkInterno = html.querySelectorAll("a[href^='#'");
+
 const paragrafos = html.querySelectorAll("p");
 
 const paragrafosFooter = html.querySelectorAll(".copy p");
 // // console.log(paragrafosFooter);
 
 const titulos = Array.from(html.getElementsByClassName("titulo"));
+
+const texto = html.querySelectorAll(".estilo");
+// console.log(texto);
 
 // if (animais) {
 //   console.log("Ok");
@@ -205,10 +213,59 @@ linksMenu[0].classList.add("ativo");
 // demais itens caso eles possuam a mesma. Previna
 // o comportamento padrão desses links
 
+//Função para prevenir o redirecionamento ao clicar no link e chamar demais funções de verificação
+function linkInternoPrevent(event) {
+  event.preventDefault();
+  linkClicado(event.target.innerHTML);
+  classeAtivo(event.target);
+}
+
+//Função para mostrar no console em qual link o usuário clicou
+function linkClicado(event) {
+  console.log(`clicou em ${event}`);
+}
+
+//Função para adicionar classe 'ativo' ao event.target e retirar a classe dos demais
+function classeAtivo(event) {
+  event.classList.add("ativo");
+
+  linkInterno.forEach((item) => {
+    if (event === item) {
+    } else {
+      item.classList.remove("ativo");
+    }
+  });
+}
+
+linkInterno.forEach((item) => {
+  item.addEventListener("click", linkInternoPrevent);
+});
+
 // Selecione todos os elementos do site começando a partir do body,
 // ao clique mostre exatamente quais elementos estão sendo clicados
 
+itensBody.addEventListener("click", (event) => {
+  console.log(event.target);
+});
+
 // Utilizando o código anterior, ao invés de mostrar no console,
 // remova o elemento que está sendo clicado, o método remove() remove um elemento
+// itensBody.addEventListener("click", (event) => {
+//   event.target.remove();
+// });
 
 // Se o usuário clicar na tecla (t), aumente todo o texto do site.
+
+itensBody.addEventListener("keypress", (event) => {
+  console.log(event.key);
+  if (event.key === "t") {
+    texto.forEach((item) => {
+      item.style.fontSize = "xx-large";
+    });
+  }
+  if (event.key === "q") {
+    texto.forEach((item) => {
+      item.style.fontSize = "large";
+    });
+  }
+});
