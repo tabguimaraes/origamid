@@ -213,8 +213,8 @@ linksMenu[0].classList.add("ativo");
 // demais itens caso eles possuam a mesma. Previna
 // o comportamento padrão desses links
 
-//Função para prevenir o redirecionamento ao clicar no link e chamar demais funções de verificação
-function linkInternoPrevent(event) {
+//Função principal (prevenir o redirecionamento ao clicar no link e chamar demais funções de verificação)
+function funcaoPrincipal(event) {
   event.preventDefault();
   linkClicado(event.target.innerHTML);
   classeAtivo(event.target);
@@ -230,15 +230,14 @@ function classeAtivo(event) {
   event.classList.add("ativo");
 
   linkInterno.forEach((item) => {
-    if (event === item) {
-    } else {
+    if (event != item) {
       item.classList.remove("ativo");
     }
   });
 }
 
 linkInterno.forEach((item) => {
-  item.addEventListener("click", linkInternoPrevent);
+  item.addEventListener("click", funcaoPrincipal);
 });
 
 // Selecione todos os elementos do site começando a partir do body,
@@ -250,22 +249,19 @@ itensBody.addEventListener("click", (event) => {
 
 // Utilizando o código anterior, ao invés de mostrar no console,
 // remova o elemento que está sendo clicado, o método remove() remove um elemento
+
 // itensBody.addEventListener("click", (event) => {
 //   event.target.remove();
 // });
 
 // Se o usuário clicar na tecla (t), aumente todo o texto do site.
 
-itensBody.addEventListener("keypress", (event) => {
+html.addEventListener("keypress", (event) => {
   console.log(event.key);
   if (event.key === "t") {
-    texto.forEach((item) => {
-      item.style.fontSize = "xx-large";
-    });
+    html.classList.add("estilo");
   }
   if (event.key === "q") {
-    texto.forEach((item) => {
-      item.style.fontSize = "large";
-    });
+    html.classList.remove("estilo");
   }
 });
