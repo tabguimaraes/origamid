@@ -472,6 +472,8 @@ const calculadora = document.querySelectorAll(".numeros");
 
 // console.log(h1Selecionado.classList[0]);
 
+const formInput = document.querySelector(".calculadora input");
+
 const mostraNumero = [];
 calculadora.forEach((numeros) => {
   numeros.addEventListener("click", () => {
@@ -487,13 +489,22 @@ calculadora.forEach((numeros) => {
 
 // EX:
 
-let valorAtual;
-function somarValores() {
-  mostraNumero.forEach((item) => {
-    valorAtual = item;
-    valorAtual = valorAtual + item;
-    console.log(valorAtual);
-  });
-}
+// let valorAtual;
+// function somarValores() {
+//   mostraNumero.forEach((item) => {
+//     valorAtual = item;
+//     valorAtual = valorAtual + item;
+//     console.log(valorAtual);
+//   });
+// }
 
-somarValores();
+// somarValores();
+
+let valores = [];
+
+formInput.addEventListener("input", (event) => {
+  console.log(Number(event.data));
+  valores.push(Number(event.data));
+});
+
+console.log(valores);

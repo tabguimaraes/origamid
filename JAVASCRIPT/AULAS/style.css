@@ -50,3 +50,16 @@ img {
   border-radius: 5px;
   text-align: center;
 }
+
+.calculadora input {
+  grid-column: 1/-1;
+  height: 50px;
+  font-size: x-large;
+  padding: 0 10px;
+}
+
+.calculadora button {
+  grid-column: 2;
+  height: 40px;
+  font-size: large;
+}
