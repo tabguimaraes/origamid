@@ -12,11 +12,12 @@ const animais = document.getElementById("animais");
 const animaisQuery = document.querySelector("#animais");
 // console.log(animaisQuery.innerText);
 
-const animaisGet = document.getElementById("animais");
-// console.log(animaisGet.innerText);
-
 const animaisDescricaoH2 = html.querySelectorAll(".animais-descricao h2");
 // console.log(animaisDescricaoH2[0].innerHTML);
+
+const copyFooter = html.querySelector(".copy");
+
+const faq = html.querySelector(".faq");
 
 const gridSection = document.getElementsByClassName("grid-section");
 // console.log(gridSection);
@@ -214,38 +215,38 @@ linksMenu[0].classList.add("ativo");
 // o comportamento padrão desses links
 
 //Função principal (prevenir o redirecionamento ao clicar no link e chamar demais funções de verificação)
-function funcaoPrincipal(event) {
-  event.preventDefault();
-  linkClicado(event.target.innerHTML);
-  classeAtivo(event.target);
-}
+// function funcaoPrincipal(event) {
+//   event.preventDefault();
+//   linkClicado(event.target.innerHTML);
+//   classeAtivo(event.target);
+// }
 
 //Função para mostrar no console em qual link o usuário clicou
-function linkClicado(event) {
-  console.log(`clicou em ${event}`);
-}
+// function linkClicado(event) {
+//   console.log(`clicou em ${event}`);
+// }
 
 //Função para adicionar classe 'ativo' ao event.target e retirar a classe dos demais
-function classeAtivo(event) {
-  event.classList.add("ativo");
+// function classeAtivo(event) {
+//   event.classList.add("ativo");
 
-  linkInterno.forEach((item) => {
-    if (event != item) {
-      item.classList.remove("ativo");
-    }
-  });
-}
+//   linkInterno.forEach((item) => {
+//     if (event != item) {
+//       item.classList.remove("ativo");
+//     }
+//   });
+// }
 
-linkInterno.forEach((item) => {
-  item.addEventListener("click", funcaoPrincipal);
-});
+// linkInterno.forEach((item) => {
+//   item.addEventListener("click", funcaoPrincipal);
+// });
 
 // Selecione todos os elementos do site começando a partir do body,
 // ao clique mostre exatamente quais elementos estão sendo clicados
 
-itensBody.addEventListener("click", (event) => {
-  console.log(event.target);
-});
+// itensBody.addEventListener("click", (event) => {
+//   console.log(event.target);
+// });
 
 // Utilizando o código anterior, ao invés de mostrar no console,
 // remova o elemento que está sendo clicado, o método remove() remove um elemento
@@ -256,12 +257,34 @@ itensBody.addEventListener("click", (event) => {
 
 // Se o usuário clicar na tecla (t), aumente todo o texto do site.
 
-html.addEventListener("keypress", (event) => {
-  console.log(event.key);
-  if (event.key === "t") {
-    html.classList.add("estilo");
-  }
-  if (event.key === "q") {
-    html.classList.remove("estilo");
-  }
-});
+// html.addEventListener("keypress", (event) => {
+//   console.log(event.key);
+//   if (event.key === "t") {
+//     html.classList.add("estilo");
+//   }
+//   if (event.key === "q") {
+//     html.classList.remove("estilo");
+//   }
+// });
+
+//Exercícios Manipulação de elementos
+
+// Duplique o menu e adicione ele em copy
+
+// const cloneMenu = menu.cloneNode(true);
+
+// copyFooter.appendChild(cloneMenu);
+
+// Selecione o primeiro DT da dl de Faq
+
+// const faqListaDt = faq.querySelector("dt");
+
+// Selecione o DD referente ao primeiro DT
+// const faqListaDd = faqListaDt.nextElementSibling;
+
+// faqListaDd.innerText = "21 anos";
+// console.log(faqListaDd.innerHTML);
+
+// Substitua o conteúdo html de .faq pelo de .animais
+
+// faq.innerHTML = animais.innerHTML;
