@@ -13,6 +13,10 @@ img {
   max-width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #faf6ed;
   color: #222;
