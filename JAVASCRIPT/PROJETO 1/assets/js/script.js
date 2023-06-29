@@ -3,32 +3,24 @@ function main() {
 
   const html = document.querySelector("html");
 
-  const animaisDescricao = html.querySelectorAll(".animais-descricao > section");
+  const animaisDescricao = html.querySelectorAll(".animais-descricao section");
 
   const animaisLista = html.querySelectorAll(".animais-lista li");
 
-  function sessaoAnimais(index) {
-    animaisDescricao.forEach((item) => {
-      item.classList.remove("ativo");
-    });
-    animaisLista.forEach((item) => {
-      item.classList.remove("ativo");
-    });
+  if (animaisDescricao.length && animaisLista.length) {
+    function sessaoAnimais(index) {
+      animaisDescricao.forEach((item) => {
+        item.classList.remove("ativo");
+      });
 
-    animaisDescricao[index].classList.add("ativo");
-    animaisLista[index].classList.add("ativo");
+      animaisDescricao[index].classList.add("ativo");
+    }
+
+    animaisLista.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        sessaoAnimais(index);
+      });
+    });
   }
-
-  animaisDescricao.forEach((item, index) => {
-    item.addEventListener("click", () => {
-      sessaoAnimais(index);
-    });
-  });
-
-  animaisLista.forEach((item, index) => {
-    item.addEventListener("click", () => {
-      sessaoAnimais(index);
-    });
-  });
 }
 main();
