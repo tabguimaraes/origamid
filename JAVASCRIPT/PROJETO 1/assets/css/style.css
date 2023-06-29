@@ -21,7 +21,7 @@ body {
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
-.animais-descricao .ativo {
+.js .animais-descricao .ativo {
   display: block;
   animation: show 0.5s forwards;
 }
@@ -138,7 +138,7 @@ body {
   grid-column: 3;
 }
 
-.animais-descricao section {
+.js .animais-descricao > section {
   display: none;
   margin-bottom: 3rem;
 }
