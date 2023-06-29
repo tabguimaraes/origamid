@@ -2,32 +2,30 @@ console.log("Conexão ok!");
 
 const html = document.querySelector("html");
 
+const animaisDescricao = html.querySelectorAll(".animais-descricao > section");
+
 const animaisLista = html.querySelectorAll(".animais-lista li");
 
-const animaisDescricao = html.querySelectorAll(".animais-descricao section");
-
-animaisLista.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    // animaisLista.forEach((item) => {
-    //   item.classList.remove("ativo");
-    // });
-    if (item) {
-      item.classList.remove("ativo");
-    }
-    classeAtivo(index);
+function sessaoAnimais(index) {
+  animaisDescricao.forEach((item) => {
+    item.classList.remove("ativo");
   });
-  console.log(item, index);
-});
-
-animaisDescricao.forEach((item, index) => {
-  item.classList.remove("ativo");
-  item.addEventListener("click", () => {
-    console.log(item, index);
-    // classeAtivo(index);
+  animaisLista.forEach((item) => {
+    item.classList.remove("ativo");
   });
-});
 
-function classeAtivo(index) {
   animaisDescricao[index].classList.add("ativo");
   animaisLista[index].classList.add("ativo");
 }
+
+animaisDescricao.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    sessaoAnimais(index);
+  });
+});
+
+animaisLista.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    sessaoAnimais(index);
+  });
+});
