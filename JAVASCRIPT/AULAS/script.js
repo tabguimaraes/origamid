@@ -475,13 +475,17 @@ const calculadora = document.querySelectorAll(".numeros");
 const formInput = document.querySelector(".calculadora input");
 
 const mostraNumero = [];
-calculadora.forEach((numeros) => {
+calculadora.forEach((numeros, index) => {
   numeros.addEventListener("click", () => {
-    // console.log(numeros);
-    const numeroAtual = Number(numeros.innerText);
+    let a, b, c;
+    let numeroAtual = Number(numeros.innerText);
     mostraNumero.push(numeroAtual);
+
+    // a = mostraNumero.some(index);
+    // c = a + b;
+    // numeroAtual += numeroAtual;
     // mostraNumero = Number(mostraNumero);
-    console.log(mostraNumero);
+    console.log(a);
   });
 });
 
