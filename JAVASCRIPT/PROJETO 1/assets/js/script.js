@@ -3,11 +3,12 @@ function main() {
   document.documentElement.style.scrollBehavior = "smooth";
   document.documentElement.className += " js";
 
+  const accordionList = document.querySelectorAll(".js-accordion dt");
   const activeClass = "ativo";
   const animaisDescricao = document.querySelectorAll(".animais-descricao section");
   const animaisLista = document.querySelectorAll(".animais-lista li");
-  const accordionList = document.querySelectorAll(".js-accordion dt");
-  // const menuLi = document.querySelectorAll(".menu li a"); 
+  const sections = document.querySelectorAll(".js-sections");
+  // const menuLi = document.querySelectorAll(".menu li a");
 
   function initSessaoAnimais() {
     if (animaisDescricao.length && animaisLista.length) {
@@ -41,5 +42,29 @@ function main() {
     }
   }
   initAccordionList();
+
+  function initAnimaScroll() {
+    if (sections.length) {
+      function animaScroll() {
+        sections.forEach((item) => {
+          const valorWindow = window.innerHeight * 0.6;
+          const sectionTop = item.getBoundingClientRect().top;
+          const isSectionVisible = sectionTop - valorWindow;
+          item.addEventListener("scroll", () => {
+            console.log(isSectionVisible < 0);
+
+            if (isSectionVisible < 0) {
+              item.classList.add(activeClass);
+            } else {
+              item.classList.remove(activeClass);
+            }
+          });
+        });
+      }
+      //VERIFICAR NECESSIDADE DE ATIVAR FUNÇÃO animaScroll()
+      animaScroll();
+    }
+  }
+  initAnimaScroll();
 }
 main();
