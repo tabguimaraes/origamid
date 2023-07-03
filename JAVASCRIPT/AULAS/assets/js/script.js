@@ -757,16 +757,61 @@ linksMenu[0].classList.add("ativo");
 
 // Aula 0401 Constructor Function 1
 
-function Carro(marca, modelo, preco, ano) {
-  this.marca = marca;
-  this.modelo = modelo;
-  this.preco = preco;
-  this.ano = ano;
+// function Carro(marca, modelo, preco, ano) {
+//   this.marca = marca;
+//   this.modelo = modelo;
+//   this.preco = preco;
+//   this.ano = ano;
+// }
+
+// const honda = new Carro("Honda", "Civic", 20e3, 1998);
+
+// console.log(honda);
+
+// honda.modelo = "City";
+// console.log(honda);
+
+//Exercícios Aula 0401 Constructor Function 1
+
+// Transforme o objeto abaixo em uma Constructor Function
+
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+  this.andar = () => {
+    return `${this.nome} andou`;
+  };
 }
 
-const honda = new Carro("Honda", "Civic", 20e3, 1998);
+// Crie 3 pessoas, João - 20 anos,
+// Maria - 25 anos, Bruno - 15 anos
 
-console.log(honda);
+const joao = new Pessoa("João", 20);
+const maria = new Pessoa("Maria", 25);
+const bruno = new Pessoa("Bruno", 15);
 
-honda.modelo = "City";
-console.log(honda);
+// Crie uma Constructor Function (Dom) para manipulação
+// de listas de elementos do dom. Deve conter as seguintes
+// propriedades e métodos:
+//
+// elements, retorna NodeList com os elementos selecionados
+// addClass(classe), adiciona a classe a todos os elementos
+// removeClass(classe), remove a classe a todos os elementos
+
+// function Dom(elements, addClass, removeClass) {
+//   this.elements = document.querySelectorAll(elements);
+//   // function Ativo(elements) {
+//   //   elements.classList.add(addClass);
+//   // }
+//   this.ativar = (elements) => {
+//     elements.classList.add(addClass);
+//   };
+
+//   // elements.classList.remove(removeClass);
+// }
+
+// const buscaLi = new Dom("ul", "ativo", "inativo");
+
+// buscaLi.ativar("ativo");
+
+// console.log(buscaLi.elements);
