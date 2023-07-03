@@ -14,7 +14,7 @@ function main() {
   function initSessaoAnimais() {
     if (animaisDescricao.length && animaisLista.length) {
       function sessaoAnimais(index) {
-        animaisDescricao.forEach(item => {
+        animaisDescricao.forEach((item) => {
           item.classList.remove(activeClass);
         });
 
@@ -37,7 +37,7 @@ function main() {
         this.nextElementSibling.classList.toggle(activeClass);
       }
 
-      accordionList.forEach(item => {
+      accordionList.forEach((item) => {
         item.addEventListener("click", activeAccordion);
       });
     }
@@ -45,19 +45,19 @@ function main() {
   initAccordionList();
 
   function initAnimaScroll() {
-    function AnimaScroll(item) {
-      const sectionTop = item.getBoundingClientRect().top;
-      const isSectionVisible = sectionTop - valorWindow < 0;
-      if (isSectionVisible) {
-        item.classList.add(activeClass);
+    if (section.length) {
+      function AnimaScroll() {
+        section.forEach((item) => {
+          const sectionTop = item.getBoundingClientRect().top;
+          const isSectionVisible = sectionTop - valorWindow < 0;
+          if (isSectionVisible) {
+            item.classList.add(activeClass);
+          }
+        });
       }
-    }
 
-    section.forEach(item => {
-      window.addEventListener("scroll", () => {
-        AnimaScroll(item);
-      });
-    });
+      window.addEventListener("scroll", AnimaScroll);
+    }
   }
   initAnimaScroll();
 }
