@@ -32,13 +32,15 @@ function main() {
 
   function initAccordionList() {
     if (accordionList.length) {
-      function activeAccordion() {
-        this.classList.toggle(activeClass);
-        this.nextElementSibling.classList.toggle(activeClass);
+      function activeAccordion(item) {
+        item.classList.toggle(activeClass);
+        item.nextElementSibling.classList.toggle(activeClass);
       }
 
       accordionList.forEach((item) => {
-        item.addEventListener("click", activeAccordion);
+        item.addEventListener("click", () => {
+          activeAccordion(item);
+        });
       });
     }
   }
