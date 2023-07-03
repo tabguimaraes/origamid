@@ -7,7 +7,7 @@ function main() {
   const activeClass = "ativo";
   const animaisDescricao = document.querySelectorAll(".animais-descricao section");
   const animaisLista = document.querySelectorAll(".animais-lista li");
-  const sections = document.querySelectorAll(".js-sections");
+  const section = document.querySelectorAll(".js-sections");
   // const menuLi = document.querySelectorAll(".menu li a");
 
   function initSessaoAnimais() {
@@ -43,28 +43,43 @@ function main() {
   }
   initAccordionList();
 
-  function initAnimaScroll() {
-    if (sections.length) {
-      function animaScroll() {
-        sections.forEach((item) => {
-          const valorWindow = window.innerHeight * 0.6;
-          const sectionTop = item.getBoundingClientRect().top;
-          const isSectionVisible = sectionTop - valorWindow;
-          item.addEventListener("scroll", () => {
-            console.log(isSectionVisible < 0);
+  // function initAnimaScroll() {
+  //   if (section.length) {
+  //     const valorWindow = window.innerHeight * 0.6;
+  //     console.log(valorWindow);
 
-            if (isSectionVisible < 0) {
-              item.classList.add(activeClass);
-            } else {
-              item.classList.remove(activeClass);
-            }
-          });
-        });
-      }
-      //VERIFICAR NECESSIDADE DE ATIVAR FUNÇÃO animaScroll()
-      animaScroll();
-    }
-  }
-  initAnimaScroll();
+  //     section.forEach((item) => {
+  //       // console.log(isSectionVisible < 0);
+
+  //       item.addEventListener("scroll", (event) => {
+  //         console.log(event);
+  //         // const isSectionVisible = sectionTop - valorWindow;
+  //         // const sectionTop = item.getBoundingClientRect().top;
+  //         // if (isSectionVisible < 0) {
+  //         //   item.classList.add(activeClass);
+  //         // } else {
+  //         //   item.classList.remove(activeClass);
+  //         // }
+  //       });
+  //     });
+
+  //     // function animaScroll() {}
+  //     //VERIFICAR NECESSIDADE DE ATIVAR FUNÇÃO animaScroll()
+  //     // animaScroll();
+  //   }
+  // }
+  // initAnimaScroll();
+
+  const tamanhoTela = window.innerHeight * 0.6;
+  console.log(tamanhoTela);
+
+  section.forEach((item) => {
+    // const alturaTopo = item.getBoundingClientRect().top;
+    window.addEventListener("scroll", () => {
+      const alturaTopo = item.getBoundingClientRect().top;
+      console.log(alturaTopo);
+    });
+  });
 }
+
 main();
