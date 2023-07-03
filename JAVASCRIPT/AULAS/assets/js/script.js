@@ -754,3 +754,19 @@ linksMenu[0].classList.add("ativo");
 // Substitua o conteúdo html de .faq pelo de .animais
 
 // faq.innerHTML = animais.innerHTML;
+
+// Aula 0401 Constructor Function 1
+
+function Carro(marca, modelo, preco, ano) {
+  this.marca = marca;
+  this.modelo = modelo;
+  this.preco = preco;
+  this.ano = ano;
+}
+
+const honda = new Carro("Honda", "Civic", 20e3, 1998);
+
+console.log(honda);
+
+honda.modelo = "City";
+console.log(honda);
