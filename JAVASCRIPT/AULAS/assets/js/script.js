@@ -775,20 +775,20 @@ linksMenu[0].classList.add("ativo");
 
 // Transforme o objeto abaixo em uma Constructor Function
 
-function Pessoa(nome, idade) {
-  this.nome = nome;
-  this.idade = idade;
-  this.andar = () => {
-    return `${this.nome} andou`;
-  };
-}
+// function Pessoa(nome, idade) {
+//   this.nome = nome;
+//   this.idade = idade;
+//   this.andar = () => {
+//     return `${this.nome} andou`;
+//   };
+// }
 
 // Crie 3 pessoas, João - 20 anos,
 // Maria - 25 anos, Bruno - 15 anos
 
-const joao = new Pessoa("João", 20);
-const maria = new Pessoa("Maria", 25);
-const bruno = new Pessoa("Bruno", 15);
+// const joao = new Pessoa("João", 20);
+// const maria = new Pessoa("Maria", 25);
+// const bruno = new Pessoa("Bruno", 15);
 
 // Crie uma Constructor Function (Dom) para manipulação
 // de listas de elementos do dom. Deve conter as seguintes
@@ -798,20 +798,67 @@ const bruno = new Pessoa("Bruno", 15);
 // addClass(classe), adiciona a classe a todos os elementos
 // removeClass(classe), remove a classe a todos os elementos
 
-// function Dom(elements, addClass, removeClass) {
-//   this.elements = document.querySelectorAll(elements);
-//   // function Ativo(elements) {
-//   //   elements.classList.add(addClass);
-//   // }
-//   this.ativar = (elements) => {
-//     elements.classList.add(addClass);
+// function Dom(elements, insertClass) {
+//   this.element = document.querySelectorAll(elements);
+//   this.addClass = () => {
+//     this.element.forEach((itens) => {
+//       itens.classList.add(insertClass);
+//     });
 //   };
-
-//   // elements.classList.remove(removeClass);
+//   this.removeClass = () => {
+//     this.element.forEach((itens) => {
+//       itens.classList.remove(insertClass);
+//     });
+//   };
 // }
 
-// const buscaLi = new Dom("ul", "ativo", "inativo");
+// const listaLi = new Dom("li", "ativo");
 
-// buscaLi.ativar("ativo");
+// console.log(listaLi.removeClass());
 
-// console.log(buscaLi.elements);
+// function Carro(marca, precoInicial, taxa) {
+//   this.preco = function precoFinal() {
+//     return console.log(precoInicial * taxa);
+//   };
+//   this.taxa = taxa;
+//   this.marca = marca;
+
+//   // console.log(precoFinal);
+// }
+
+// function Carro(marca, precoInicial) {
+//   this.taxa = 1.2;
+//   this.precoFinal = precoInicial * this.taxa;
+//   this.marca = marca;
+//   this.preco = precoInicial;
+//   // console.log(precoFinal);
+// }
+
+// const mazda = new Carro("mazda", 5000);
+// console.log(mazda.marca, mazda.preco);
+
+// const honda = new Carro("honda", 10000, 1.2);
+// console.log(honda.marca, honda.precoFinal);
+
+// mazda.taxa = 1.5;
+// mazda.preco = console.log(mazda);
+// console.log(mazda.marca, mazda.precoFinal);
+
+// function novoObjeto(precoInicial, taxa) {
+//   this.preco = precoInicial;
+//   this.taxaVariavel = taxa;
+//   const precoFinal = this.preco * this.taxaVariavel;
+//   return console.log(precoFinal);
+// }
+
+// const teste = new novoObjeto();
+// console.log(teste);
+
+// teste.preco = 1000;
+// console.log(teste);
+
+// teste.taxaVariavel = 1.2;
+// console.log(teste);
+
+// const novoTeste = new novoObjeto(2000, 1.5);
+// console.log(novoTeste);
