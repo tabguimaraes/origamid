@@ -922,28 +922,41 @@ linksMenu[0].classList.add("ativo");
 // Utilizando o foreach na array abaixo,
 // some os valores de Taxa e os valores de Recebimento
 
-// const transacoes = [
-//   {
-//     descricao: 'Taxa do Pão',
-//     valor: 'R$ 39',
-//   },
-//   {
-//     descricao: 'Taxa do Mercado',
-//     valor: 'R$ 129',
-//   },
-//   {
-//     descricao: 'Recebimento de Cliente',
-//     valor: 'R$ 99',
-//   },
-//   {
-//     descricao: 'Taxa do Banco',
-//     valor: 'R$ 129',
-//   },
-//   {
-//     descricao: 'Recebimento de Cliente',
-//     valor: 'R$ 49',
-//   },
-// ];
+const transacoes = [
+  {
+    descricao: "Taxa do Pão",
+    valor: "R$ 39",
+  },
+  {
+    descricao: "Taxa do Mercado",
+    valor: "R$ 129",
+  },
+  {
+    descricao: "Recebimento de Cliente",
+    valor: "R$ 99",
+  },
+  {
+    descricao: "Taxa do Banco",
+    valor: "R$ 129",
+  },
+  {
+    descricao: "Recebimento de Cliente",
+    valor: "R$ 49",
+  },
+];
+
+let = valorTaxa = 0;
+let valorRecebimento = 0;
+
+transacoes.forEach((item) => {
+  if (item.descricao.toLowerCase().includes("taxa")) {
+    valorTaxa += +item.valor.replaceAll("R$ ", "");
+  } else {
+    valorRecebimento += +item.valor.replaceAll("R$ ", "");
+  }
+});
+console.log(valorTaxa);
+console.log(valorRecebimento);
 
 // Retorne uma array com a lista abaixo
 const transportes = "Carro;Avião;Trem;Ônibus;Bicicleta";
@@ -965,4 +978,12 @@ const frase = "Melhor do ano!";
 console.log(frase[frase.length - 1]);
 
 // Retorne o total de taxas
-// const transacoes = ['Taxa do Banco', '   TAXA DO PÃO', '  taxa do mercado', 'depósito Bancário', 'TARIFA especial'];
+const transacoes1 = ["Taxa do Banco", "   TAXA DO PÃO", "  taxa do mercado", "depósito Bancário", "TARIFA especial"];
+
+let recorrencias = 0;
+transacoes1.forEach((item) => {
+  if (item.toLowerCase().trim().includes("taxa")) {
+    recorrencias++;
+  }
+});
+console.log(`Existem ${recorrencias} entradas com 'taxa' na lista`);
