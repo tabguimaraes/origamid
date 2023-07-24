@@ -865,19 +865,19 @@ linksMenu[0].classList.add("ativo");
 
 // Aula 0402 Prototype
 
-function Prototipo(nome, idade) {
-  this.nome = nome;
-  this.idade = idade;
-}
-console.log(Prototipo);
+// function Prototipo(nome, idade) {
+//   this.nome = nome;
+//   this.idade = idade;
+// }
+// console.log(Prototipo);
 
-Prototipo.prototype.andar = function () {
-  return this.nome + " andou";
-};
+// Prototipo.prototype.andar = function () {
+//   return this.nome + " andou";
+// };
 
-const joao = new Prototipo("João", 25);
-// console.log(Prototipo.prototype);
-console.log(joao.andar());
+// const joao = new Prototipo("João", 25);
+// // console.log(Prototipo.prototype);
+// console.log(joao.andar());
 
 // Exercícios Aula 0402 Prototype
 
@@ -886,20 +886,83 @@ console.log(joao.andar());
 // Crie um método no protótipo que retorne
 // o nome completo da pessoa
 
+// function Pessoas(nomeAtribuido, sobreNomeAtribuido, idadeAtribuido) {
+//   this.nome = nomeAtribuido;
+//   this.sobreNome = sobreNomeAtribuido;
+//   this.idade = idadeAtribuido;
+// }
+
+// Pessoas.prototype.nomeCompleto = function () {
+//   return `${this.nome} ${this.sobreNome}`;
+// };
+
+// const cliente = new Pessoas("Tiago", "Guimarães", 42);
+// console.log(Pessoas.prototype);
+
 // Liste os métodos acessados por
 // dados criados com NodeList,
 // HTMLCollection, Document
 
 // Liste os construtores dos dados abaixo
-const li = document.querySelector("li");
+// const li = document.querySelector("li");
 
-li;
-li.click;
-li.innerText;
-li.value;
-li.hidden;
-li.offsetLeft;
-li.click();
+// li;
+// li.click;
+// li.innerText;
+// li.value;
+// li.hidden;
+// li.offsetLeft;
+// li.click();
 
 // Qual o construtor do dado abaixo:
-li.hidden.constructor.name;
+// li.hidden.constructor.name;
+
+// Exercícios Aula 0404 String
+
+// Utilizando o foreach na array abaixo,
+// some os valores de Taxa e os valores de Recebimento
+
+// const transacoes = [
+//   {
+//     descricao: 'Taxa do Pão',
+//     valor: 'R$ 39',
+//   },
+//   {
+//     descricao: 'Taxa do Mercado',
+//     valor: 'R$ 129',
+//   },
+//   {
+//     descricao: 'Recebimento de Cliente',
+//     valor: 'R$ 99',
+//   },
+//   {
+//     descricao: 'Taxa do Banco',
+//     valor: 'R$ 129',
+//   },
+//   {
+//     descricao: 'Recebimento de Cliente',
+//     valor: 'R$ 49',
+//   },
+// ];
+
+// Retorne uma array com a lista abaixo
+const transportes = "Carro;Avião;Trem;Ônibus;Bicicleta";
+let transporteArray = transportes.split(";");
+console.log(transporteArray);
+
+// Substitua todos os span's por a's
+const html = `<ul>
+                <li><span>Sobre </span></li>
+                <li><span>Produtos</span></li>
+                <li><span>Contato</span></li>
+              </ul>`;
+
+let htmlModificado = html.replaceAll("span", "a");
+console.log(htmlModificado);
+
+// Retorne o último caracter da frase
+const frase = "Melhor do ano!";
+console.log(frase[frase.length - 1]);
+
+// Retorne o total de taxas
+// const transacoes = ['Taxa do Banco', '   TAXA DO PÃO', '  taxa do mercado', 'depósito Bancário', 'TARIFA especial'];
