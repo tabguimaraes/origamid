@@ -922,68 +922,88 @@ linksMenu[0].classList.add("ativo");
 // Utilizando o foreach na array abaixo,
 // some os valores de Taxa e os valores de Recebimento
 
-const transacoes = [
-  {
-    descricao: "Taxa do Pão",
-    valor: "R$ 39",
-  },
-  {
-    descricao: "Taxa do Mercado",
-    valor: "R$ 129",
-  },
-  {
-    descricao: "Recebimento de Cliente",
-    valor: "R$ 99",
-  },
-  {
-    descricao: "Taxa do Banco",
-    valor: "R$ 129",
-  },
-  {
-    descricao: "Recebimento de Cliente",
-    valor: "R$ 49",
-  },
-];
+// const transacoes = [
+//   {
+//     descricao: "Taxa do Pão",
+//     valor: "R$ 39",
+//   },
+//   {
+//     descricao: "Taxa do Mercado",
+//     valor: "R$ 129",
+//   },
+//   {
+//     descricao: "Recebimento de Cliente",
+//     valor: "R$ 99",
+//   },
+//   {
+//     descricao: "Taxa do Banco",
+//     valor: "R$ 129",
+//   },
+//   {
+//     descricao: "Recebimento de Cliente",
+//     valor: "R$ 49",
+//   },
+// ];
 
-let = valorTaxa = 0;
-let valorRecebimento = 0;
+// let = valorTaxa = 0;
+// let valorRecebimento = 0;
 
-transacoes.forEach((item) => {
-  if (item.descricao.toLowerCase().includes("taxa")) {
-    valorTaxa += +item.valor.replaceAll("R$ ", "");
-  } else {
-    valorRecebimento += +item.valor.replaceAll("R$ ", "");
-  }
-});
-console.log(valorTaxa);
-console.log(valorRecebimento);
+// transacoes.forEach((item) => {
+//   if (item.descricao.toLowerCase().includes("taxa")) {
+//     valorTaxa += +item.valor.replace("R$ ", "");
+//   } else {
+//     valorRecebimento += +item.valor.replace("R$ ", "");
+//   }
+// });
+// console.log(valorTaxa);
+// console.log(valorRecebimento);
 
-// Retorne uma array com a lista abaixo
-const transportes = "Carro;Avião;Trem;Ônibus;Bicicleta";
-let transporteArray = transportes.split(";");
-console.log(transporteArray);
+// // Retorne uma array com a lista abaixo
+// const transportes = "Carro;Avião;Trem;Ônibus;Bicicleta";
+// let transporteArray = transportes.split(";");
+// console.log(transporteArray);
 
-// Substitua todos os span's por a's
-const html = `<ul>
-                <li><span>Sobre </span></li>
-                <li><span>Produtos</span></li>
-                <li><span>Contato</span></li>
-              </ul>`;
+// // Substitua todos os span's por a's
+// const html = `<ul>
+//                 <li><span>Sobre</span></li>
+//                 <li><span>Produtos</span></li>
+//                 <li><span>Contato</span></li>
+//               </ul>`;
 
-let htmlModificado = html.replaceAll("span", "a");
-console.log(htmlModificado);
+// let htmlModificado = html.replaceAll("span", "a");
+// console.log(htmlModificado);
 
-// Retorne o último caracter da frase
-const frase = "Melhor do ano!";
-console.log(frase[frase.length - 1]);
+// // Retorne o último caracter da frase
+// const frase = "Melhor do ano!";
+// console.log(frase[frase.length - 1]);
 
-// Retorne o total de taxas
-const transacoes1 = ["Taxa do Banco", "   TAXA DO PÃO", "  taxa do mercado", "depósito Bancário", "TARIFA especial"];
+// // Retorne o total de taxas
+// const transacoes2 = ["Taxa do Banco", "   TAXA DO PÃO", "  taxa do mercado", "depósito Bancário", "TARIFA especial"];
 
-let recorrencias = 0;
-transacoes1.forEach((item) => {
-  if (item.toLowerCase().trim().includes("taxa")) {
-    recorrencias++;
-  }
-});
-console.log(`Existem ${recorrencias} entradas com 'taxa' na lista`);
+// let recorrencias = 0;
+// transacoes2.forEach((item) => {
+//   if (item.toLowerCase().trim().includes("taxa")) {
+//     recorrencias++;
+//   }
+// });
+// console.log(`Existem ${recorrencias} entradas com o nome 'taxa' na lista`);
+
+//Aula 0405 Number e Math 1
+
+//Metodo .toString(10 ou em branco)>> Padrão Decimal. Base 16 = Hexadecimal; Base 32 = duotrigesimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V). Obs: Bom método para criar códigos internos de cadastrado de clientes, por exemplo
+const numeroBinario = (100000).toString();
+
+console.log(numeroBinario);
+
+//Exercícios Aula 0405 Number e Math 1
+
+// Retorne um número aleatório
+// entre 1050 e 2000
+
+// Retorne o maior número da lista abaixo
+const numeros = "4, 5, 20, 8, 9";
+
+// Crie uma função para limpar os preços
+// e retornar os números com centavos arredondados
+// depois retorne a soma total
+const listaPrecos = ["R$ 59,99", " R$ 100,222", "R$ 230  ", "r$  200"];
