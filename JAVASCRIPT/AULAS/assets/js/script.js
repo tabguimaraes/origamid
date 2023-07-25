@@ -1000,7 +1000,7 @@ linksMenu[0].classList.add("ativo");
 // Retorne um número aleatório
 // entre 1050 e 2000
 
-console.log((Math.random() * (1060 - 1050) + 1050).toFixed());
+console.log((Math.random() * (1055 - 1050) + 1050).toFixed());
 
 // Retorne o maior número da lista abaixo
 let numeros = "4, 5, 20, 8, 9";
@@ -1016,12 +1016,13 @@ console.log(`O maior número da lista é ${Math.max(...numeros.split(", "))}`);
 // depois retorne a soma total
 const listaPrecos = ["R$ 59,99", " R$ 100,222", "R$ 230  ", "r$  200"];
 
-let precosAjustados = [];
-let soma = 0;
-listaPrecos.forEach((item) => {
-  let ajusteNumero = +item.toLowerCase().replace("r$", "").replace(",", ".").trim();
-  precosAjustados.push(ajusteNumero);
-  soma += parseFloat(ajusteNumero.toFixed(2));
-});
-console.log(precosAjustados);
-console.log(soma);
+function somarPrecos() {
+  let soma = 0;
+  listaPrecos.forEach((item) => {
+    let ajusteNumero = +item.toLowerCase().replace("r$", "").replace(",", ".").trim();
+    soma += +ajusteNumero.toFixed(2);
+  });
+  console.log(soma.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+}
+
+somarPrecos();
