@@ -1000,15 +1000,16 @@ linksMenu[0].classList.add("ativo");
 // Retorne um número aleatório
 // entre 1050 e 2000
 
-console.log((Math.random() * (2000 - 1050) + 1050).toFixed());
+console.log((Math.random() * (1060 - 1050) + 1050).toFixed());
 
 // Retorne o maior número da lista abaixo
 let numeros = "4, 5, 20, 8, 9";
-let listaNumeros = [];
-numeros.split(", ").forEach((item) => {
-  listaNumeros.push(Number(item.slice()));
-});
-console.log(`O maior número da lista é ${Math.max(...listaNumeros)}`);
+// let listaNumeros = [];
+// numeros.split(", ").forEach((item) => {
+//   listaNumeros.push(+item);
+// });
+// console.log(`O maior número da lista é ${Math.max(...listaNumeros)}`);
+console.log(`O maior número da lista é ${Math.max(...numeros.split(", "))}`);
 
 // Crie uma função para limpar os preços
 // e retornar os números com centavos arredondados
