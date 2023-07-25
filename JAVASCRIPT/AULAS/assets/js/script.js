@@ -990,20 +990,37 @@ linksMenu[0].classList.add("ativo");
 
 //Aula 0405 Number e Math 1
 
-//Metodo .toString(10 ou em branco)>> Padrão Decimal. Base 16 = Hexadecimal; Base 32 = duotrigesimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V). Obs: Bom método para criar códigos internos de cadastrado de clientes, por exemplo
-const numeroBinario = (100000).toString();
+//Metodo .toString). 10 ou em branco= Padrão Decimal; Base 2 = Binário; Base 16 = Hexadecimal; Base 32 = duotrigesimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V). Obs: Bom método para criar códigos internos de cadastrado de clientes, por exemplo
+// const numeroBinario = (255).toString(2);
 
-console.log(numeroBinario);
+// console.log(numeroBinario);
 
 //Exercícios Aula 0405 Number e Math 1
 
 // Retorne um número aleatório
 // entre 1050 e 2000
 
+console.log((Math.random() * (2000 - 1050) + 1050).toFixed());
+
 // Retorne o maior número da lista abaixo
-const numeros = "4, 5, 20, 8, 9";
+let numeros = "4, 5, 20, 8, 9";
+let listaNumeros = [];
+numeros.split(", ").forEach((item) => {
+  listaNumeros.push(Number(item.slice()));
+});
+console.log(`O maior número da lista é ${Math.max(...listaNumeros)}`);
 
 // Crie uma função para limpar os preços
 // e retornar os números com centavos arredondados
 // depois retorne a soma total
 const listaPrecos = ["R$ 59,99", " R$ 100,222", "R$ 230  ", "r$  200"];
+
+let precosAjustados = [];
+let soma = 0;
+listaPrecos.forEach((item) => {
+  let ajusteNumero = +item.toLowerCase().replace("r$", "").replace(",", ".").trim();
+  precosAjustados.push(ajusteNumero);
+  soma += parseFloat(ajusteNumero.toFixed(2));
+});
+console.log(precosAjustados);
+console.log(soma);
