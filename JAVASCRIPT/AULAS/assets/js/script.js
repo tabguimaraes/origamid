@@ -1000,44 +1000,102 @@ linksMenu[0].classList.add("ativo");
 // Retorne um número aleatório
 // entre 1050 e 2000
 
-console.log((Math.random() * (1055 - 1050) + 1050).toFixed());
+// console.log((Math.random() * (1055 - 1050) + 1050).toFixed());
 
-// Retorne o maior número da lista abaixo
-let numeros = "4, 5, 20, 8, 9";
-// let listaNumeros = [];
-// numeros.split(", ").forEach((item) => {
-//   listaNumeros.push(+item);
-// });
-// console.log(`O maior número da lista é ${Math.max(...listaNumeros)}`);
-console.log(`O maior número da lista é ${Math.max(...numeros.split(", "))}`);
+// // Retorne o maior número da lista abaixo
+// let numeros = "4, 5, 20, 8, 9";
+// // let listaNumeros = [];
+// // numeros.split(", ").forEach((item) => {
+// //   listaNumeros.push(+item);
+// // });
+// // console.log(`O maior número da lista é ${Math.max(...listaNumeros)}`);
+// console.log(`O maior número da lista é ${Math.max(...numeros.split(", "))}`);
 
-// Crie uma função para limpar os preços
-// e retornar os números com centavos arredondados
-// depois retorne a soma total
-const listaPrecos = ["R$ 59,99", " R$ 100,222", "R$ 230  ", "r$  200"];
+// // Crie uma função para limpar os preços
+// // e retornar os números com centavos arredondados
+// // depois retorne a soma total
+// const listaPrecos = ["R$ 59,99", " R$ 100,222", "R$ 230  ", "r$  200"];
 
-//Primeira versão de resolução dlo exercicio
+// //Primeira versão de resolução dlo exercicio
 
-// function somarPrecos() {
-//   let soma = 0;
-//   listaPrecos.forEach((item) => {
-//     let ajusteNumero = +item.toLowerCase().replace("r$", "").replace(",", ".").trim();
-//     soma += +ajusteNumero.toFixed(2);
-//   });
-//   console.log(soma.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+// // function somarPrecos() {
+// //   let soma = 0;
+// //   listaPrecos.forEach((item) => {
+// //     let ajusteNumero = +item.toLowerCase().replace("r$", "").replace(",", ".").trim();
+// //     soma += +ajusteNumero.toFixed(2);
+// //   });
+// //   console.log(soma.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+// // }
+
+// // somarPrecos();
+
+// let soma = 0;
+
+// function ajustarPreco(preco) {
+//   precoAjustado = +preco.toLowerCase().replace("r$", "").replace(",", ".").trim();
+//   return precoAjustado;
 // }
 
-// somarPrecos();
+// listaPrecos.forEach((preco) => {
+//   soma += ajustarPreco(preco);
+// });
 
-let soma = 0;
+// console.log(soma.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
 
-function ajustarPreco(preco) {
-  precoAjustado = +preco.toLowerCase().replace("r$", "").replace(",", ".").trim();
-  return precoAjustado;
-}
+// Exercícios Aula 0406 Array
 
-listaPrecos.forEach((preco) => {
-  soma += ajustarPreco(preco);
-});
+// Remova o primeiro valor de comidas e coloque em uma variável
+// const comidas = ["Pizza", "Frango", "Carne", "Macarrão"];
+// const primeiroValor = comidas.shift();
+// console.log(primeiroValor);
 
-console.log(soma.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+// // Remova o último valor de comidas e coloque em uma variável
+// const ultimoValor = comidas.pop();
+// console.log(ultimoValor);
+
+// // Adicione 'Arroz' ao final da array
+// comidas.push("Arroz");
+// console.log(comidas);
+
+// // Adicione 'Peixe' e 'Batata' ao início da array
+// comidas.unshift("Peixe", "Batata");
+// console.log(comidas);
+
+// const estudantes = ["Marcio", "Brenda", "Joana", "Kleber", "Julia"];
+// // Arrume os estudantes em ordem alfabética
+// estudantes.sort();
+// console.log(estudantes);
+
+// // Inverta a ordem dos estudantes
+// estudantes.reverse();
+// console.log(estudantes);
+
+// // Verifique se Joana faz parte dos estudantes
+// if (estudantes.includes("Joana")) console.log("Joana está na lista");
+
+// // Verifique se Juliana faz parte dos estudantes
+// if (estudantes.includes("Juliana")) {
+// } else {
+//   console.log("Não há Juliana na lista");
+// }
+
+// let html = `<section>
+//               <div>Sobre</div>
+//               <div>Produtos</div>
+//               <div>Contato</div>
+//             </section>`;
+// // Substitua section por ul e div com li,
+// // utilizando split e join
+// let novoHtml = html.split("section").join("ul").split("div").join("li");
+// console.log(novoHtml);
+
+// const carros = ["Ford", "Fiat", "VW", "Honda"];
+// // Remova o último carro, mas antes de remover
+// // salve a array original em outra variável
+
+// let cloneCarros = carros.slice();
+
+// console.log(carros);
+// carros.pop();
+// console.log(cloneCarros);
+// console.log(carros);
