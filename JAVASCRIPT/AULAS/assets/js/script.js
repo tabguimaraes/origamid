@@ -1016,13 +1016,28 @@ console.log(`O maior número da lista é ${Math.max(...numeros.split(", "))}`);
 // depois retorne a soma total
 const listaPrecos = ["R$ 59,99", " R$ 100,222", "R$ 230  ", "r$  200"];
 
-function somarPrecos() {
-  let soma = 0;
-  listaPrecos.forEach((item) => {
-    let ajusteNumero = +item.toLowerCase().replace("r$", "").replace(",", ".").trim();
-    soma += +ajusteNumero.toFixed(2);
-  });
-  console.log(soma.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+//Primeira versão de resolução dlo exercicio
+
+// function somarPrecos() {
+//   let soma = 0;
+//   listaPrecos.forEach((item) => {
+//     let ajusteNumero = +item.toLowerCase().replace("r$", "").replace(",", ".").trim();
+//     soma += +ajusteNumero.toFixed(2);
+//   });
+//   console.log(soma.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+// }
+
+// somarPrecos();
+
+let soma = 0;
+
+function ajustarPreco(preco) {
+  precoAjustado = +preco.toLowerCase().replace("r$", "").replace(",", ".").trim();
+  return precoAjustado;
 }
 
-somarPrecos();
+listaPrecos.forEach((preco) => {
+  soma += ajustarPreco(preco);
+});
+
+console.log(soma.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
