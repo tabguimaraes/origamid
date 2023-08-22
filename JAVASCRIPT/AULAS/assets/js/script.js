@@ -1099,3 +1099,14 @@ linksMenu[0].classList.add("ativo");
 // carros.pop();
 // console.log(cloneCarros);
 // console.log(carros);
+
+// Aula Array e Iteração 1
+
+const aulas = [10, 25, 30];
+// const total1 = aulas.reduce((acumulador, atual) => {
+//   return acumulador + atual;
+// });
+// total1; // 65
+
+// const total2 = aulas.reduce((acc, cur) => acc + cur, 100);
+// total2; // 165
