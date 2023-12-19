@@ -798,16 +798,16 @@ linksMenu[0].classList.add("ativo");
 // addClass(classe), adiciona a classe a todos os elementos
 // removeClass(classe), remove a classe a todos os elementos
 
-// function Dom(elements, insertClass) {
+// function Dom(elements) {
 //   this.element = document.querySelectorAll(elements);
-//   this.addClass = () => {
+//   this.addClass = (elementClass) => {
 //     this.element.forEach((itens) => {
-//       itens.classList.add(insertClass);
+//       itens.classList.add(elementClass);
 //     });
 //   };
-//   this.removeClass = () => {
+//   this.removeClass = (elementClass) => {
 //     this.element.forEach((itens) => {
-//       itens.classList.remove(insertClass);
+//       itens.classList.remove(elementClass);
 //     });
 //   };
 // }
@@ -1016,7 +1016,7 @@ linksMenu[0].classList.add("ativo");
 // // depois retorne a soma total
 // const listaPrecos = ["R$ 59,99", " R$ 100,222", "R$ 230  ", "r$  200"];
 
-// //Primeira versão de resolução dlo exercicio
+// //Primeira versão de resolução do exercicio
 
 // // function somarPrecos() {
 // //   let soma = 0;
@@ -1031,10 +1031,10 @@ linksMenu[0].classList.add("ativo");
 
 // let soma = 0;
 
-// function ajustarPreco(preco) {
-//   precoAjustado = +preco.toLowerCase().replace("r$", "").replace(",", ".").trim();
-//   return precoAjustado;
-// }
+/* function ajustarPreco(preco) {
+  precoAjustado = +preco.toLowerCase().replace("r$", "").replace(",", ".").trim();
+  return precoAjustado;
+} */
 
 // listaPrecos.forEach((preco) => {
 //   soma += ajustarPreco(preco);
@@ -1102,7 +1102,7 @@ linksMenu[0].classList.add("ativo");
 
 // Aula Array e Iteração 1
 
-const aulas = [10, 25, 30];
+// const aulas = [10, 25, 30];
 // const total1 = aulas.reduce((acumulador, atual) => {
 //   return acumulador + atual;
 // });
