@@ -1,0 +1,39 @@
+/* RESET DE ESTILOS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#main {
+  width: 500px;
+  height: 50vh;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+}
+
+#main h1 {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+#exibirResultado {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+#joke {
+  font-size: large;
+  opacity: 0;
+  margin-bottom: 20px;
+}

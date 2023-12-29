@@ -1,0 +1,44 @@
+/* RESET DE ESTILOS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#main {
+  width: 250px;
+  height: 50vh;
+  margin: 50px auto;
+  background-color: rgb(154, 154, 248);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+}
+
+#main h1 {
+  /* place-self: center; */
+  background-color: aliceblue;
+  text-align: center;
+}
+
+#exibirResultado {
+  place-self: start;
+  padding: 15px;
+}
+
+#exibirResultado h2,
+p {
+  margin-bottom: 15px;
+}
+
+h2 {
+  text-align: center;
+}
