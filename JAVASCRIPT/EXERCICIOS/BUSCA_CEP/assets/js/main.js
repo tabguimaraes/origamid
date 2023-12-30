@@ -1,13 +1,11 @@
-console.log("ok");
-
-const cep = document.querySelector("#cep");
-const btn = document.querySelector("#btn");
-const resultado = document.querySelector("#resultado");
-
 function buscarCEP() {
+  const cep = document.querySelector("#cep");
+  const btn = document.querySelector("#btn");
+  const resultado = document.querySelector("#resultado");
+
   btn.addEventListener("click", () => {
     const cepDigitado = `https://viacep.com.br/ws/${cep.value}/json`;
-    fetch(cepDigitado).then(function (response) {
+    fetch(cepDigitado).then((response) => {
       response
         .json()
         .then((response) => {
