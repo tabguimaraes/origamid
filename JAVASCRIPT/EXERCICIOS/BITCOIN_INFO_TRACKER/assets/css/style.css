@@ -53,4 +53,5 @@ h2 {
   display: flex;
   place-items: center;
   margin: auto;
+  cursor: pointer;
 }
