@@ -7,7 +7,7 @@ function init() {
   updatePrice.addEventListener("click", () => {
     fetch(buscaValor).then((response) => {
       response.json().then((response) => {
-        const precoCompra = response.BRL.buy;
+        const precoCompra = response["BRL"]["buy"];
         valorBitcoin.innerText = `Um bitcoin custa ${precoCompra.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}`;
       });
     });
