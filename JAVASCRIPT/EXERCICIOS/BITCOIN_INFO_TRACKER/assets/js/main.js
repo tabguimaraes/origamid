@@ -12,16 +12,6 @@ function init() {
       });
     });
   });
-
-  let counter = 0;
-
-  while (counter < 10) {
-    setInterval(() => {
-      msg.innerText = `Preço será atualizado em ${counter}`;
-      counter++;
-      console.log(counter);
-    }, 30000);
-  }
 }
 
 init();
