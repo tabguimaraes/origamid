@@ -1110,3 +1110,17 @@ linksMenu[0].classList.add("ativo");
 
 // const total2 = aulas.reduce((acc, cur) => acc + cur, 100);
 // total2; // 165
+
+/* 
+REVISAR
+
+API / HTTP
+HISTORY API
+CLASSES
+GET E SET
+EXTENDS
+COUNTDOWN
+
+*/
+
+
